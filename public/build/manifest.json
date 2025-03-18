@@ -1,0 +1,70 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-BBaTjq_8.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/fonts/ProximaNova-Bold.eot": {
+    "file": "assets/ProximaNova-Bold-DesTZSjL.eot",
+    "src": "resources/fonts/ProximaNova-Bold.eot"
+  },
+  "resources/fonts/ProximaNova-Bold.svg": {
+    "file": "assets/ProximaNova-Bold-BhSgHrWe.svg",
+    "src": "resources/fonts/ProximaNova-Bold.svg"
+  },
+  "resources/fonts/ProximaNova-Bold.ttf": {
+    "file": "assets/ProximaNova-Bold-DvQ_TT3F.ttf",
+    "src": "resources/fonts/ProximaNova-Bold.ttf"
+  },
+  "resources/fonts/ProximaNova-Bold.woff": {
+    "file": "assets/ProximaNova-Bold-pP1iG9pT.woff",
+    "src": "resources/fonts/ProximaNova-Bold.woff"
+  },
+  "resources/fonts/ProximaNova-Bold.woff2": {
+    "file": "assets/ProximaNova-Bold-M4dSJvKq.woff2",
+    "src": "resources/fonts/ProximaNova-Bold.woff2"
+  },
+  "resources/fonts/ProximaNova-Regular.eot": {
+    "file": "assets/ProximaNova-Regular-Cf96Peo5.eot",
+    "src": "resources/fonts/ProximaNova-Regular.eot"
+  },
+  "resources/fonts/ProximaNova-Regular.svg": {
+    "file": "assets/ProximaNova-Regular-BIgjE7Kx.svg",
+    "src": "resources/fonts/ProximaNova-Regular.svg"
+  },
+  "resources/fonts/ProximaNova-Regular.ttf": {
+    "file": "assets/ProximaNova-Regular-BXM5SWhd.ttf",
+    "src": "resources/fonts/ProximaNova-Regular.ttf"
+  },
+  "resources/fonts/ProximaNova-Regular.woff": {
+    "file": "assets/ProximaNova-Regular-B71zhyMd.woff",
+    "src": "resources/fonts/ProximaNova-Regular.woff"
+  },
+  "resources/fonts/ProximaNova-Regular.woff2": {
+    "file": "assets/ProximaNova-Regular-dxJMJVm_.woff2",
+    "src": "resources/fonts/ProximaNova-Regular.woff2"
+  },
+  "resources/images/about-us-hero.png": {
+    "file": "assets/about-us-hero-CCupRFcx.png",
+    "src": "resources/images/about-us-hero.png"
+  },
+  "resources/images/challenge-bg.png": {
+    "file": "assets/challenge-bg-BJ0B27XS.png",
+    "src": "resources/images/challenge-bg.png"
+  },
+  "resources/images/community-bg.png": {
+    "file": "assets/community-bg-DPi46-xz.png",
+    "src": "resources/images/community-bg.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-B3yArc-m.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-BtyUoQ9M.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  }
+}
