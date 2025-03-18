@@ -143,21 +143,26 @@
                     </div>
                     @enderror
 
-                    <label for="child_name" class="block mb-1">Child's Name</label>
-                    <input name="child_name" type="text" id="child_name" class="block p-2.5 w-full @error('child_name') mb-0 @else mb-4 @enderror" value="{{ old('child_name') }}" required>
-                    @error('child_name')
-                    <div class="alert alert-danger mb-4">
-                        <h3 class="accent-red-800">{{ $message }}</h3>
+                    <div class="two_columns flex justify-between items-center mb-4 gap-5">
+                        <div class="w-full md:w-1/2">
+                            <label for="child_name" class="block mb-1">Child's Name</label>
+                            <input name="child_name" type="text" id="child_name" class="block p-2.5 w-full @error('child_name') mb-0 @else mb-4 @enderror" value="{{ old('child_name') }}" required>
+                            @error('child_name')
+                            <div class="alert alert-danger mb-4">
+                                <h3 class="accent-red-800">{{ $message }}</h3>
+                            </div>
+                            @enderror
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <label for="school" class="block mb-1">School</label>
+                            <input name="school" type="text" id="school" class="block p-2.5 w-full @error('school') mb-0 @else mb-4 @enderror" value="{{ old('school') }}" required>
+                            @error('school')
+                            <div class="alert alert-danger mb-4">
+                                <h3 class="accent-red-800">{{ $message }}</h3>
+                            </div>
+                            @enderror
+                        </div>
                     </div>
-                    @enderror
-
-                    <label for="school" class="block mb-1">School</label>
-                    <input name="school" type="text" id="school" class="block p-2.5 w-full @error('school') mb-0 @else mb-4 @enderror" value="{{ old('school') }}" required>
-                    @error('school')
-                    <div class="alert alert-danger mb-4">
-                        <h3 class="accent-red-800">{{ $message }}</h3>
-                    </div>
-                    @enderror
                     <div class="two_columns flex items-center mb-4 gap-5">
                         <div class="w-full md:w-1/2">
                             <label for="age" class="block mb-1">Age</label>
