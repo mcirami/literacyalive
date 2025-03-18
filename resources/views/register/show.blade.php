@@ -135,13 +135,15 @@
                         </div>
                     </div>
 
-                    <label for="email" class="block mb-1">E-Mail Address</label>
-                    <input name="email" type="email" id="email" class="block p-2.5 w-full @error('email') mb-0 @else mb-4 @enderror" value="{{ old('email') }}" required>
-                    @error('email')
-                    <div class="alert alert-danger mb-4">
-                        <h3 class="accent-red-800">{{ $message }}</h3>
+                    <div class="pb-4 border-b border-gray-200 mb-5">
+                        <label for="email" class="block mb-1">E-Mail Address</label>
+                        <input name="email" type="email" id="email" class="block p-2.5 w-full @error('email') mb-0 @else mb-4 @enderror" value="{{ old('email') }}" required>
+                        @error('email')
+                        <div class="alert alert-danger mb-4">
+                            <h3 class="accent-red-800">{{ $message }}</h3>
+                        </div>
+                        @enderror
                     </div>
-                    @enderror
 
                     <div class="two_columns flex justify-between items-center mb-4 gap-5">
                         <div class="w-full md:w-1/2">
@@ -163,7 +165,7 @@
                             @enderror
                         </div>
                     </div>
-                    <div class="two_columns flex items-center mb-4 gap-5">
+                    <div class="two_columns flex items-center mb-5 gap-5 pb-4 border-b border-gray-200">
                         <div class="w-full md:w-1/2">
                             <label for="age" class="block mb-1">Age</label>
                             <input name="age" type="text" id="age" class="block p-2.5 w-full @error('age') mb-0 @else mb-4 @enderror" value="{{ old('age') }}" required>
