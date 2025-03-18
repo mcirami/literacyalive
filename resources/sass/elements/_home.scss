@@ -1,0 +1,180 @@
+@use "../partials/mixins";
+@use "../partials/variables";
+.hero {
+    padding-top: 130px;
+    background: variables.$lightYellow;
+
+    @include mixins.query(tablet) {
+        padding-top: 100px;
+    }
+
+    h2 {
+        span {
+            background: variables.$white;
+            padding: 5px;
+        }
+    }
+    p {
+        margin-bottom: 30px;
+    }
+}
+.challenge {
+    background: url('../images/challenge-bg.png') no-repeat center;
+    background-size: cover;
+
+    h2 {
+        position: relative;
+        display: inline-block;
+    }
+
+    h4 {
+        @include mixins.proximaBold;
+        font-size: 1.2rem;
+    }
+}
+.boxes {
+
+    .column {
+        max-width: 22rem;
+        padding: 20px;
+        text-align: left;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        position: relative;
+
+        h3 {
+            font-size: 3.4rem;
+        }
+
+        .circle {
+            width: 70px;
+            height: 70px;
+            background: #fff;
+            position: absolute;
+            right: -20px;
+            top: -20px;
+            border-radius: 45px;
+            -webkit-border-radius:  45px;
+            -moz-border-radius:  45px;
+            padding: 18px;
+
+            .inner_circle {
+                width: 100%;
+                height: 100%;
+                border-radius: 50px;
+            }
+        }
+
+        &.box1 {
+            background: variables.$box1bg;
+
+            .inner_circle {
+                background: variables.$box1bg;
+            }
+
+            h3 {
+                color: variables.$box1Txt;
+            }
+        }
+
+        &.box2 {
+            background: variables.$box2bg;
+
+            .inner_circle {
+                background: variables.$box2bg;
+            }
+
+            h3 {
+                color: variables.$box2Txt;
+            }
+        }
+
+        &.box3 {
+            background: variables.$box3bg;
+
+            .inner_circle {
+                background: variables.$box3bg;
+            }
+
+            h3 {
+                color: variables.$box3Txt;
+            }
+        }
+
+        &.box4 {
+            background: variables.$box4bg;
+
+            .inner_circle {
+                background: variables.$box4bg;
+            }
+
+            .inner_circle {
+                background: variables.$box4bg;
+            }
+
+            h3 {
+                color: variables.$box4Txt;
+            }
+        }
+
+        &.box5 {
+            background: variables.$box5bg;
+
+            .inner_circle {
+                background: variables.$box5bg;
+            }
+
+            h3 {
+                color: variables.$box5Txt;
+            }
+        }
+    }
+}
+
+.fundraising {
+    background: variables.$darkBlue;
+
+    .image_col {
+        position: relative;
+
+        &.left {
+            right: -60px;
+
+            @include mixins.query(desktop) {
+                right: -40px;
+            }
+
+            @include mixins.query(tablet) {
+                right: 0;
+            }
+        }
+
+        &.right {
+            left: -60px;
+
+            @include mixins.query(desktop) {
+                left: -40px;
+            }
+
+            @include mixins.query(tablet) {
+                left: 0;
+            }
+        }
+    }
+}
+
+.community {
+    background: variables.$lightYellow url('../images/community-bg.png') no-repeat right top;
+
+    .button_row {
+        padding: 0 20px;
+        left: -5px;
+        position: relative;
+
+        @include mixins.query(mobile) {
+            padding: 0;
+        }
+    }
+}
+

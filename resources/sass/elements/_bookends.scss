@@ -1,0 +1,44 @@
+@use "../partials/mixins";
+@use "../partials/variables";
+
+header {
+    background-color: variables.$darkBlue;
+
+    a {
+        @include mixins.proximaBold;
+
+        @include mixins.query(desktop) {
+            font-size: 1rem;
+        }
+
+        &:not(.button) {
+            color: variables.$white;
+
+            &:hover {
+                color: variables.$yellow;
+            }
+        }
+    }
+
+    svg {
+        color: variables.$white;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+footer {
+    background: variables.$darkBlue;
+
+    .copyright {
+        color: #a0dae2;
+    }
+
+    a {
+        font-size: 1.2rem;
+
+        @include mixins.query(mobile) {
+            font-size: 1rem;
+        }
+    }
+}

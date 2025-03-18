@@ -1,0 +1,71 @@
+@use "../partials/variables";
+@use "../partials/mixins";
+
+nav a.active {
+    border-bottom: 3px solid variables.$yellow;
+}
+
+.our_story {
+    background: variables.$lightYellow url('../images/about-us-hero.png') no-repeat right top;
+    background-size: cover;
+}
+
+.director {
+    background: variables.$lightYellow;
+}
+
+.faq {
+    background: variables.$lightYellow;
+
+    #accordion-collapse {
+        background: variables.$white;
+        border: 1px solid variables.$black;
+
+        h2 {
+            font-size: 1.6rem;
+            color: variables.$black;
+        }
+
+        button {
+            @include mixins.proximaReg;
+            background-color: unset;
+            color: variables.$black;
+        }
+
+        #accordion-collapse-heading-1:has(~ .hidden) {
+            color: variables.$darkBlue;
+        }
+    }
+}
+
+.contact, .register {
+    background: variables.$lightYellow;
+
+    .alert-success {
+        border: 1px solid variables.$black;
+        padding: 60px 20px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .alert-danger {
+        color: red;
+    }
+}
+
+.schedule, .themes, .location, .register {
+    background: variables.$lightYellow;
+}
+
+.register {
+    .two_columns {
+        @include mixins.query(mobile) {
+            flex-wrap: wrap;
+        }
+    }
+}

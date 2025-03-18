@@ -1,0 +1,101 @@
+@use "mixins";
+@use "variables";
+.container {
+    @media (width >= 0) {
+        max-width: 84rem;
+    }
+}
+
+body, html {
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    h2 {
+        font-size: 3rem;
+        line-height: 1.3;
+
+        @include mixins.query(desktop) {
+            font-size: 2.5rem;
+        }
+
+        &.dotted {
+            @include mixins.dottedUnderline;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+
+        @include mixins.query(desktop) {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.slanted_div {
+    width: 150%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    background: variables.$darkBlue;
+    transform: skewY(3deg);
+
+    @include mixins.query(tablet) {
+        height: 150px;
+        top: 20px;
+    }
+
+    &.alt {
+        top: -45px;
+    }
+
+    &.yellow {
+        background: variables.$lightYellow;
+    }
+
+}
+
+.button {
+    @include mixins.proximaBold;
+    padding: 10px 15px;
+    color: variables.$black;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+
+    @include mixins.query(tablet) {
+        font-size: .9rem;
+        padding: 10px;
+    }
+
+    @include mixins.query(mobile) {
+        padding: 10px 20px;
+    }
+
+    &.yellow {
+        background: variables.$yellow;
+        border: 1px solid variables.$black;
+
+        &:hover {
+            background: variables.$yellowHover;
+        }
+    }
+
+    &.white {
+        background: variables.$white;
+        border: 1px solid variables.$black;
+
+        &:hover {
+            background: variables.$yellowHover;
+        }
+    }
+}
