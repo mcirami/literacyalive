@@ -27,7 +27,7 @@
         <a href="{{ Route('register.show') }}" class="uppercase mx-auto sm:max-w-50 flex justify-between items-center button yellow text-lg">
             <span>Register Now</span>
             <span class="arrow_wrap max-w-4">
-                <img src="{{ Vite::asset('resources/images/button-arrow.png') }}" alt="">
+                <img src="{{ asset('images/button-arrow.png') }}" alt="">
             </span>
         </a>
     </div>

@@ -44,18 +44,6 @@
     "file": "assets/ProximaNova-Regular-dxJMJVm_.woff2",
     "src": "resources/fonts/ProximaNova-Regular.woff2"
   },
-  "resources/images/about-us-hero.png": {
-    "file": "assets/about-us-hero-CCupRFcx.png",
-    "src": "resources/images/about-us-hero.png"
-  },
-  "resources/images/challenge-bg.png": {
-    "file": "assets/challenge-bg-BJ0B27XS.png",
-    "src": "resources/images/challenge-bg.png"
-  },
-  "resources/images/community-bg.png": {
-    "file": "assets/community-bg-DPi46-xz.png",
-    "src": "resources/images/community-bg.png"
-  },
   "resources/js/app.js": {
     "file": "assets/app-B3yArc-m.js",
     "name": "app",
@@ -63,7 +51,7 @@
     "isEntry": true
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-BtyUoQ9M.css",
+    "file": "assets/app-RRI_ZhrG.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   }

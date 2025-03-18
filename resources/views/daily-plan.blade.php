@@ -17,18 +17,18 @@
                     <div class="images_wrap">
                         <div class="w-full flex justify-center content-center gap-5 mb-5">
                             <div class="column">
-                                <img src="{{ Vite::asset('resources/images/our-story-1.png') }}" alt="">
+                                <img src="{{ asset('images/our-story-1.png') }}" alt="">
                             </div>
                             <div class="column">
-                                <img src="{{ Vite::asset('resources/images/our-story-2.png') }}" alt="">
+                                <img src="{{ asset('images/our-story-2.png') }}" alt="">
                             </div>
                         </div>
                         <div class="w-full flex justify-center content-center gap-5">
                             <div class="column">
-                                <img src="{{ Vite::asset('resources/images/our-story-3.png') }}" alt="">
+                                <img src="{{ asset('images/our-story-3.png') }}" alt="">
                             </div>
                             <div class="column">
-                                <img src="{{ Vite::asset('resources/images/our-story-4.png') }}" alt="">
+                                <img src="{{ asset('images/our-story-4.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
             <h2 class="dotted mb-10 inline-block relative">Themes</h2>
             <div class="two_columns flex flex-wrap justify-center max-w-300 mx-auto">
                 <div class="column mb-10 lg:mb-0">
-                    <img src="{{ Vite::asset('resources/images/director.png') }}" alt="">
+                    <img src="{{ asset('images/director.png') }}" alt="">
                 </div>
                 <div class="column w-full md:w-3/4 text-left md:pl-10">
                     <p class="mb-10">The director of the camp, Karen Luning, has been a reading specialist for the past sixteen years of her twenty-one years of teaching. In addition to volunteering at various camps, she has been involved in Boy Scouts with her two sons where they participated in numerous camp activities. </p>

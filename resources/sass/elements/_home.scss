@@ -19,7 +19,7 @@
     }
 }
 .challenge {
-    background: url('../images/challenge-bg.png') no-repeat center;
+    background: url('/images/challenge-bg.png') no-repeat center;
     background-size: cover;
 
     h2 {
@@ -165,7 +165,7 @@
 }
 
 .community {
-    background: variables.$lightYellow url('../images/community-bg.png') no-repeat right top;
+    background: variables.$lightYellow url('/images/community-bg.png') no-repeat right top;
 
     .button_row {
         padding: 0 20px;

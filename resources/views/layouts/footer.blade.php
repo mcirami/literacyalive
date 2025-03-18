@@ -3,7 +3,7 @@
     <div class="container mx-auto px-5 z-2 relative">
         <div class="logo mx-auto max-w-60 md:max-w-80 flex justify-center items-center">
             <a href="/">
-                <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="">
+                <img src="{{ asset('images/logo.png') }}" alt="">
             </a>
         </div>
         <div class="footer_nav flex justify-center items-center mt-10 mb-5 gap-5 md:gap-10 text-white">

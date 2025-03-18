@@ -41,7 +41,7 @@
                     <button type="submit" class="uppercase mt-6 w-full sm:max-w-60 flex justify-between items-center button yellow gap-6 text-lg">
                         <span>Send Message</span>
                         <span class="arrow_wrap max-w-4">
-                            <img src="{{ Vite::asset('resources/images/button-arrow.png') }}" alt="">
+                            <img src="{{ asset('images/button-arrow.png') }}" alt="">
                         </span>
                     </button>
                     @error('error')

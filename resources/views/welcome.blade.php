@@ -13,12 +13,12 @@
                     <a href="#" class="uppercase sm:max-w-50 flex justify-between items-center button yellow text-lg">
                         <span>Learn More</span>
                         <span class="arrow_wrap max-w-4">
-                            <img src="{{ Vite::asset('resources/images/button-arrow.png') }}" alt="">
+                            <img src="{{ asset('images/button-arrow.png') }}" alt="">
                         </span>
                     </a>
                 </div>
                 <div class="column w-full lg:w-1/2">
-                    <img src="{{ Vite::asset('resources/images/hero-image.png') }}" alt="">
+                    <img src="{{ asset('images/hero-image.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
             <a href="#" class="uppercase mx-auto sm:max-w-60 flex justify-between items-center button yellow gap-6 text-lg">
                 <span>View Dashboard</span>
                 <span class="arrow_wrap max-w-4">
-                    <img src="{{ Vite::asset('resources/images/button-arrow.png') }}" alt="">
+                    <img src="{{ asset('images/button-arrow.png') }}" alt="">
                 </span>
             </a>
         </div>
@@ -83,7 +83,7 @@
         <div class="container mx-auto px-5 z-2 relative">
             <div  class="flex items-center justify-center">
                 <div class="image_col left">
-                    <img src="{{ Vite::asset('resources/images/girl-graphic.png') }}" alt="">
+                    <img src="{{ asset('images/girl-graphic.png') }}" alt="">
                 </div>
                 <div class="content_col">
                     <h2 class="text-white">Love Literacy Seeks Fundraising
@@ -92,12 +92,12 @@
                     <a href="#" class="uppercase mx-auto sm:max-w-60 flex justify-between items-center button white gap-6 text-lg">
                         <span>View Dashboard</span>
                         <span class="arrow_wrap max-w-4">
-                            <img src="{{ Vite::asset('resources/images/button-arrow.png') }}" alt="">
+                            <img src="{{ asset('images/button-arrow.png') }}" alt="">
                         </span>
                     </a>
                 </div>
                 <div class="image_col right">
-                    <img src="{{ Vite::asset('resources/images/rainbow-bird.png') }}" alt="">
+                    <img src="{{ asset('images/rainbow-bird.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -108,29 +108,29 @@
             <p class="mt-6 mb-4">Volunteer, donate, sign up for our annual report.</p>
             <div class="two_columns flex justify-center max-w-200 mx-auto">
                 <div class="column flex-shrink-2">
-                    <img src="{{ Vite::asset('resources/images/community-col-1.png') }}" alt="">
+                    <img src="{{ asset('images/community-col-1.png') }}" alt="">
                 </div>
                 <div class="column flex-shrink-2">
-                    <img src="{{ Vite::asset('resources/images/community-col-2.png') }}" alt="">
+                    <img src="{{ asset('images/community-col-2.png') }}" alt="">
                 </div>
             </div>
             <div class="button_row  w-full max-w-200 mx-auto flex flex-col sm:flex-row justify-center items-center mt-5 gap-3 lg:gap-5">
                 <a href="#" class="uppercase w-full mx-auto flex justify-between items-center button yellow text-lg">
                     <span>Volunteer</span>
                     <span class="arrow_wrap max-w-4">
-                            <img src="{{ Vite::asset('resources/images/button-arrow.png') }}" alt="">
+                            <img src="{{ asset('images/button-arrow.png') }}" alt="">
                         </span>
                 </a>
                 <a href="#" class="uppercase w-full mx-auto flex justify-between items-center button yellow text-lg">
                     <span>Donate</span>
                     <span class="arrow_wrap max-w-4">
-                            <img src="{{ Vite::asset('resources/images/button-arrow.png') }}" alt="">
+                            <img src="{{ asset('images/button-arrow.png') }}" alt="">
                         </span>
                 </a>
                 <a href="#" class="uppercase w-full flex justify-between items-center button yellow text-lg">
                     <span>Annual Report</span>
                     <span class="arrow_wrap max-w-4">
-                        <img src="{{ Vite::asset('resources/images/button-arrow.png') }}" alt="">
+                        <img src="{{ asset('images/button-arrow.png') }}" alt="">
                     </span>
                 </a>
             </div>

@@ -3,7 +3,7 @@
         <nav>
             <div class="flex flex-wrap lg:flex-nowrap items-center justify-between mx-auto py-4">
                 <a href="/" class="logo max-w-50 xl:max-w-60 flex justify-center items-center">
-                    <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="">
+                    <img src="{{ asset('images/logo.png') }}" alt="">
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button" class="lg:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm" aria-controls="navbar-default" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -48,7 +48,7 @@
                                class="flex justify-between items-center button yellow gap-6 text-lg">
                                 CONTACT US
                                 <span class="arrow_wrap max-w-4">
-                                    <img src="{{ Vite::asset('resources/images/button-arrow.png') }}" alt="">
+                                    <img src="{{ asset('images/button-arrow.png') }}" alt="">
                                 </span>
                             </a>
                         </li>
