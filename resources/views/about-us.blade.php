@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="our_story w-full pt-20 pb-20 text-left">
+    <section class="our_story w-full pt-40 pb-20 text-left">
         <div class="container mx-auto px-5 relative">
             <h2 class="inline-block relative mb-5">Our Story</h2>
             <div class="two_columns flex flex-wrap justify-center">

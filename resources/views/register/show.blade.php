@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="register w-full pb-40 pt-30">
+    <section class="register w-full pb-40 pt-40">
         <div class="container mx-auto px-5 text-center">
             <h2 class="mb-10">Register For Camp</h2>
             @if (isset($paid_error))

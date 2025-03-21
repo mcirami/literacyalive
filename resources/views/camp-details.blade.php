@@ -1,17 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="location w-full py-20">
+<section class="location w-full py-20 pt-40">
     <div class="container mx-auto px-5">
         <h2 class="dotted mb-10 inline-block relative">Location</h2>
-        <div class="text_wrap w-full mx-auto md:max-w-300">
-            <p class="">Eliot Unitarian Chapel<br>
-100 South Taylor Ave.<br>
-Kirkwood, MO 63122</p>
-<p>Classroom: Room 001 ( downstairs)<br>
-The campers will need to enter through the back of the building behind the chapel. There is a parking lot accessed from East Madison Avenue that is a one way driveway exiting onto Argonne Drive.
-</p>
-</p>
+        <div class="text_wrap w-full md:max-w-300">
+            <p class="">
+                Eliot Unitarian Chapel<br>
+                100 South Taylor Ave.<br>
+                Kirkwood, MO 63122
+            </p>
+            <p>
+                Classroom: Room 001 ( downstairs)
+            </p>
+            <p class="mt-4">The campers will need to enter through the back of the building behind the chapel. There is a parking lot accessed from East Madison Avenue that is a one way driveway exiting onto Argonne Drive.</p>
         </div>
     </div>
 </section>

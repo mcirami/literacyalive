@@ -23,18 +23,18 @@ class StripeService {
     public function createStripeCheckoutUrl($stripe, $userEmail) {
         $domain = config('app.url');
 
+        if (App::environment() == 'production') {
+            $priceID = 'price_1R58jeG6aC6DMTjH4NRgwaK4';
+        } else {
+            $priceID = 'price_1R5BftG6aC6DMTjHicig4m8g';
+        }
+
         return $stripe->checkout->sessions->create([
             'success_url'   => $domain . '/camp-register/success',
             'cancel_url'    => $domain . '/camp-register/?paid=fail',
             'line_items' => [[
-                'price_data' => [
-                    'currency' => 'usd',
-                    'product_data' => [
-                        'name' => 'Camp Registration',
-                    ],
-                    'unit_amount' => 20000,
-                ],
-                'quantity'      => 1,
+                'price'     => $priceID,
+                'quantity'  => 1,
             ]],
             'mode'                      => 'payment',
             'payment_method_types'      => [],

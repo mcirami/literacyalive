@@ -1,24 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="schedule w-full py-20">
+    <section class="schedule w-full pt-40 py-20">
         <div class="container mx-auto px-5">
             <h2>Schedule</h2>
             <div class="two_columns flex flex-wrap justify-center">
                 <div class="column md:w-1/2 pr-4 mb-10 md:mb-0">
                     <p class="mb-5">
                         8:30 Arrival/Tactile Centers Open<br>
-9:00 Meeting<br>
-9:15 Team Building Activity<br>
-9:30 Whole Group Lesson<br>
-9:45 Large Group Song and Game<br>
-10:00 Learning Stations<br>
-10:30 Read Aloud (snack and bathroom break)<br>
-10:45 Reader’s Theater<br>
-11:00 One group presents<br>
-11:15 Game Time<br>
-11:40 Closing Discussion<br>
-11:55 Dismissal Begins<br>
+                        9:00 Meeting<br>
+                        9:15 Team Building Activity<br>
+                        9:30 Whole Group Lesson<br>
+                        9:45 Large Group Song and Game<br>
+                        10:00 Learning Stations<br>
+                        10:30 Read Aloud (snack and bathroom break)<br>
+                        10:45 Reader’s Theater<br>
+                        11:00 One group presents<br>
+                        11:15 Game Time<br>
+                        11:40 Closing Discussion<br>
+                        11:55 Dismissal Begins<br>
                     </p>
                 </div>
                 <div class="column md:w-1/2">

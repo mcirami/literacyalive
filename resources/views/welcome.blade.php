@@ -2,11 +2,10 @@
 
 @section('content')
 
-
-    <section class="hero w-full pb-20">
+    <section class="hero w-full pt-40 pb-20">
         <div class="container mx-auto px-5">
             <div class="columns_wrap flex flex-col lg:flex-row items-start justify-center ">
-                <div class="column w-full lg:w-1/2 pb-10 lg:pb-20 pr-0 lg:pr-20">
+                <div class="column w-full lg:w-1/2 pr-0 lg:pr-20">
                     <h2 class="mb-4">We believe learning to read can be active and fun <span>for all children!</span></h2>
                     <p>Literacy Alive is dedicated to providing an engaging environment for children ages 5-8 learning essential reading skills at our week long summer camp.</p>
                     <p>Each day of our summer camp will be themed and  focused on both learning and movement.</p>

@@ -1,7 +1,6 @@
 @use "../partials/mixins";
 @use "../partials/variables";
 .hero {
-    padding-top: 130px;
     background: variables.$lightYellow;
 
     @include mixins.query(tablet) {

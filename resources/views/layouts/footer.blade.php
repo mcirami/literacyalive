@@ -1,4 +1,4 @@
-<footer class="w-full py-20 text-center relative">
+<footer class="w-full pt-10 pb-20 text-center relative">
     <div class="slanted_div alt z-1"></div>
     <div class="container mx-auto px-2 md:px-5 z-2 relative">
         <div class="logo mx-auto max-w-60 md:max-w-80 flex justify-center items-center">
