@@ -12,6 +12,7 @@ class StripeService {
      */
     public function createStripeGateway(): StripeClient {
 
+        dd(App::environment());
         if (App::environment() == 'production') {
             return new StripeClient(config('services.stripe.secret'));
         } else {
