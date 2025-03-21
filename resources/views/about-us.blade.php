@@ -7,10 +7,10 @@
             <div class="two_columns flex flex-wrap justify-center">
                 <div class="column md:w-1/2 pr-4 mb-10 md:mb-0">
                     <p class="mb-5">
-                        The Literacy Alive Camp concept was sparked between the two founders when they were discussing ideas on how to make learning impactful for kids in their community who struggle with learning how to read in traditional ways. Karen Luning has been a teacher for over twenty years, and she sees how successful children are when they have the opportunity to get active and use multisensory methods when learning literacy skills.
+                        The Literacy Alive Camp concept was sparked between the two founders when they were discussing ideas on how to make reading engaging and impactful for children. Literacy Alive focuses on children who tend to struggle with learning how to read in traditional ways. As a teacher, Karen Luning has seen how successful children can be when they have the opportunity to be more active and use multisensory methods when learning literacy skills.
                     </p>
                     <p>
-                        Both founders have children of their own and have dealt with searching for camps for their kids in the summer. They were always looking for a camp that would not just be fun for their children, but a camp that they would attain skills and grow from as well. Then, they thought it would be fun to start a camp that integrates learning literacy skills with movement, hands-on activities and music! This idea is what sparked the concept of making literacy come alive with a camp like no other: Literacy Alive!
+                        The founders both have children of their own and have dealt with searching for meaningful summer camps. Finding a camp that is not only fun for your child, but a camp that will help them attain skills and learn can be a challenge. That sparked the idea that it would be fun to start a camp that integrates learning literacy skills with movement, hands-on activities and music! This initiated the concept of making literacy come alive with a camp like no other: Literacy Alive!
                     </p>
                 </div>
                 <div class="column md:w-1/2">
@@ -53,8 +53,8 @@
                     <img src="{{ asset('images/director.png') }}" alt="">
                 </div>
                 <div class="column w-full md:w-3/4 text-left md:pl-10">
-                    <p class="mb-10">The director of the camp, Karen Luning, has been a reading specialist for the past sixteen years of her twenty-one years of teaching. In addition to volunteering at various camps, she has been involved in Boy Scouts with her two sons where they participated in numerous camp activities. </p>
-                    <p>She and her son both have been diagnosed with ADHD and have found ways to not only cope with this disorder but with the right learning approaches have learned to thrive. Karen is a National Board Certified teacher and is constantly trying new and fun methodology that engages children. She understands that most children learn best when they are moving and having fun!</p>
+                    <p class="mb-10">The director of the camp, Karen Luning, has been a teacher for the last twenty-one years and a reading specialist for the last sixteen. In addition to volunteering at various camps, she also ran a summer camp at UMSL for elementary students. She has also been involved in Boy Scouts with her two sons where they participated in numerous camp activities. </p>
+                    <p>She and one of her sons have both been diagnosed with ADHD and have found ways to not only cope with this disorder but with the right learning approaches have learned to thrive. Karen is a National Board Certified teacher and is constantly trying new and fun methodology that engages children. She understands that most children learn best when they are moving and having fun!</p>
                 </div>
             </div>
         </div>

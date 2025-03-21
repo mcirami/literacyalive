@@ -43,10 +43,16 @@
                                 FAQ
                             </a>
                         </li>
-                        <li>
+                        <li class="pt-2 pb-2 pl-0 lx:pl-3 pr-3">
                             <a href="/contact-us"
-                               class="flex justify-between items-center button yellow gap-6 text-lg">
+                               class="text-lg inline-block @if(request()->is('contact-us')) active @endif">
                                 CONTACT US
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/camp-register"
+                               class="flex justify-between items-center button yellow gap-6 text-lg">
+                                REGISTER NOW
                                 <span class="arrow_wrap max-w-4">
                                     <img src="{{ asset('images/button-arrow.png') }}" alt="">
                                 </span>
