@@ -50,7 +50,7 @@
                         </div>
                         <div class="w-full md:w-1/2">
                             <label for="state" class="block mb-1">State</label>
-                            <select name="state" id="state" class="block p-2.5 w-full  @error('state') mb-0 @else mb-4 @enderror" required>
+                            <select name="state" id="state" class="bg-white block p-2.5 w-full  @error('state') mb-0 @else mb-4 @enderror" required>
                                 <option value="">Select Your State</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
