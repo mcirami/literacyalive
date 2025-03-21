@@ -41,6 +41,9 @@ nav a.active {
 .contact, .register {
     background: variables.$lightYellow;
 
+    textarea {
+        background: variables.$white;
+    }
     .alert-success {
         border: 1px solid variables.$black;
         padding: 60px 20px;
@@ -62,6 +65,22 @@ nav a.active {
     background: variables.$lightYellow;
 }
 
+.schedule ul li p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+
+    span {
+        @include mixins.proximaBold;
+        min-width: 60px;
+    }
+}
 .register {
     .two_columns {
         @include mixins.query(mobile) {

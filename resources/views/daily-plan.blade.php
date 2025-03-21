@@ -1,25 +1,49 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="schedule w-full pt-40 py-20">
+    <section class="schedule w-full pt-20 pb-20">
         <div class="container mx-auto px-5">
             <h2>Schedule</h2>
             <div class="two_columns flex flex-wrap justify-center">
-                <div class="column md:w-1/2 pr-4 mb-10 md:mb-0">
-                    <p class="mb-5">
-                        8:30 Arrival/Tactile Centers Open<br>
-                        9:00 Meeting<br>
-                        9:15 Team Building Activity<br>
-                        9:30 Whole Group Lesson<br>
-                        9:45 Large Group Song and Game<br>
-                        10:00 Learning Stations<br>
-                        10:30 Read Aloud (snack and bathroom break)<br>
-                        10:45 Reader’s Theater<br>
-                        11:00 One group presents<br>
-                        11:15 Game Time<br>
-                        11:40 Closing Discussion<br>
-                        11:55 Dismissal Begins<br>
-                    </p>
+                <div class="column w-full md:w-1/2 pr-4 mb-10 md:mb-0">
+                    <ul class="mt-4">
+                        <li class="mb-2">
+                            <p><span>8:30</span> Arrival/Tactile Centers Open</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>9:00</span> Meeting</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>9:15</span> Team Building Activity</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>9:30</span> Whole Group Lesson</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>9:45</span> Large Group Song and Game</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>10:00</span> Learning Stations</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>10:30</span> Read Aloud (snack and bathroom break)</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>10:45</span> Reader’s Theater</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>11:00</span> One group presents</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>11:15</span> Game Time</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>11:40</span> Closing Discussion</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>11:55</span> Dismissal Begins</p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="column md:w-1/2">
                     <div class="images_wrap">

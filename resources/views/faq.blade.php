@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="faq w-full pb-60 pt-40">
+    <section class="faq w-full pb-60 pt-30">
         <div class="container mx-auto px-5 text-center">
             <h2 class="mb-10">Frequently Asked Questions</h2>
 
@@ -77,7 +77,7 @@ Every day there will be a major phonics concept taught to the whole group. Each 
                 <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
                     <div class="p-5">
                         <p class="mb-2 ">
-                            We are happy to accomodate your schedule if required. Please either email or write a note informing us of any changes. 
+                            We are happy to accomodate your schedule if required. Please either email or write a note informing us of any changes.
                         </p>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="location w-full py-20 pt-40">
+<section class="location w-full pb-20 pt-20">
     <div class="container mx-auto px-5">
         <h2 class="dotted mb-10 inline-block relative">Location</h2>
         <div class="text_wrap w-full md:max-w-300">

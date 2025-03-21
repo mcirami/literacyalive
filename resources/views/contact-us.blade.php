@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="contact w-full py-40">
+    <section class="contact w-full pt-30 pb-40">
         <div class="container mx-auto px-5 text-center">
             <h2 class="mb-10">How Can We Help You?</h2>
             <p class="max-w-150 mx-auto mb-6">We’re here to help and answer any questions you

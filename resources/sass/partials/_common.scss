@@ -49,6 +49,10 @@ section {
     background: variables.$darkBlue;
     transform: skewY(3deg);
 
+    @include mixins.query(desktop) {
+        height: 200px;
+    }
+
     @include mixins.query(tablet) {
         height: 150px;
         top: 20px;
