@@ -12,7 +12,6 @@ class StripeService {
      */
     public function createStripeGateway(): StripeClient {
 
-        dd(App::environment());
         if (App::environment() == 'production') {
             return new StripeClient(config('services.stripe.secret'));
         } else {
@@ -22,6 +21,7 @@ class StripeService {
     }
 
     public function createStripeCheckoutUrl($stripe, $userEmail) {
+        dd($stripe);
         $domain = config('app.url');
 
         if (App::environment() == 'production') {
