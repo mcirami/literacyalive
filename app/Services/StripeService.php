@@ -20,7 +20,7 @@ class StripeService {
 
     }
 
-    public function createStripeCheckoutUrl($stripe, $userEmail) {
+    public function createStripeCheckoutUrl($stripe, $data) {
 
         $domain = config('app.url');
 
@@ -31,7 +31,7 @@ class StripeService {
         }
 
         return $stripe->checkout->sessions->create([
-            'success_url'   => $domain . '/camp-register/success',
+            'success_url'   => $domain . '/camp-register/success?register_email=' . $data['email'] . '&child_name=' . $data['child_name'] . '&register_name=' . $data['name'],
             'cancel_url'    => $domain . '/camp-register/?paid=fail',
             'line_items' => [[
                 'price'     => $priceID,
@@ -39,7 +39,7 @@ class StripeService {
             ]],
             'mode'                      => 'payment',
             'payment_method_types'      => [],
-            'customer_email'            => $userEmail,
+            'customer_email'            => $data['email'],
         ]);
     }
 }

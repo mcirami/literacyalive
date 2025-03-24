@@ -39,7 +39,7 @@ class RegisterController extends Controller
         }
 
         $data = $request->all();
-        session(['campRegisterData' => $data]);
+        //session(['campRegisterData' => $data]);
 
         $email = App::environment('production') ? 'contact@literacyalive.org' : 'matteo@moneylovers.com';
 
@@ -47,26 +47,29 @@ class RegisterController extends Controller
 
         $stripe = $stripeService->createStripeGateway();
 
-        $checkoutSession = $stripeService->createStripeCheckoutUrl($stripe, $data['email']);
+        $checkoutSession = $stripeService->createStripeCheckoutUrl($stripe, $data);
 
         return redirect($checkoutSession->url);
     }
 
-    public function purchaseSuccess() {
+    public function purchaseSuccess(Request $request) {
         // Grab the form data from the session
-        $data = session('campRegisterData');
+        //$data = session('campRegisterData');
 
-        if ($data) {
-            $email = App::environment('production') ? 'contact@literacyalive.org' : 'matteo@moneylovers.com';
+        $data = [
+            'email'         => $request->register_email,
+            'name'          => $request->register_name,
+            'child_name'    => $request->child_name
+        ];
 
-            Mail::to($email)->send(new CampPurchase($data));
-        } else {
-            // Maybe the session expired or something
+        $email = App::environment('production') ? 'contact@literacyalive.org' : 'matteo@moneylovers.com';
 
-            Log::channel('my_log')->info('no session data', [
-                'data' => $data,
-            ]);
-        }
+        Mail::to($email)->send(new CampPurchase($data));
+
+        // Maybe the session expired or something
+        Log::channel('my_log')->info('user purchased camp', [
+            'data' => $data,
+        ]);
 
         return redirect()->route('register.show')->with('success', 'You Successfully Registered!');
 
