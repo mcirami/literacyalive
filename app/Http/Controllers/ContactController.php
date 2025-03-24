@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
 use App\Mail\Contact;
+use App\Services\RecaptchaService;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -19,19 +20,9 @@ class ContactController extends Controller
     /**
      * @throws ConnectionException
      */
-    public function sendMail(ContactRequest $request): \Illuminate\Http\RedirectResponse {
+    public function sendMail(ContactRequest $request, RecaptchaService $recaptchaService): \Illuminate\Http\RedirectResponse {
 
-        $secretKey = config('services.recaptcha.secret_key');
-        $token = $request->input('recaptcha_token');
-        $verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
-
-        $response = Http::asForm()->post($verifyUrl, [
-            'secret' => $secretKey,
-            'response' => $token,
-            // 'remoteip' => $request->ip(), // optional
-        ]);
-
-        $captchaResult = $response->json();
+        $captchaResult = $recaptchaService->checkRecaptcha($request);
 
         // $captchaResult['success'] is true/false
         // $captchaResult['score'] is from 0.0 (bad) to 1.0 (good)
