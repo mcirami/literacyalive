@@ -23,7 +23,7 @@
                     After you register you will be taken to a payment page.
                     Please submit your payment so we can finalize your registration.
                 </p>
-                <form class="max-w-150 mx-auto text-left" method="POST" action="{{ route('register.submit') }}">
+                <form id="camp_register" class="max-w-150 mx-auto text-left" method="POST" action="{{ route('register.submit') }}">
                     @csrf
                     <input type="hidden" name="recaptcha_token" id="recaptcha_token">
 
@@ -228,11 +228,17 @@
     </section>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            grecaptcha.ready(function() {
-                grecaptcha.execute('{{ config('services.recaptcha.site_key') }}', {action: 'contact_form'})
-                .then(function(token) {
-                    // Put the token in a hidden input, so it gets submitted with the form
-                    document.getElementById('recaptcha_token').value = token;
+            document.getElementById('camp_register').addEventListener('submit', function (event) {
+                event.preventDefault(); // Stop the form from submitting immediately
+
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('{{ config('services.recaptcha.site_key') }}', {action: 'contact_form'}).then(function(token) {
+                        // 1) Put the token into the hidden field
+                        document.getElementById('recaptcha_token').value = token;
+
+                        // 2) Submit the form for real
+                        event.target.submit();
+                    });
                 });
             });
         });
