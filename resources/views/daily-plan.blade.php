@@ -49,18 +49,18 @@
                     <div class="images_wrap">
                         <div class="w-full flex justify-center content-center gap-5 mb-5">
                             <div class="column">
-                                <img src="{{ asset('images/our-story-1.png') }}" alt="">
+                                <img src="{{ asset('images/daily-plan-1.png') }}" alt="">
                             </div>
                             <div class="column">
-                                <img src="{{ asset('images/our-story-2.png') }}" alt="">
+                                <img src="{{ asset('images/daily-plan-2.png') }}" alt="">
                             </div>
                         </div>
                         <div class="w-full flex justify-center content-center gap-5">
                             <div class="column">
-                                <img src="{{ asset('images/our-story-3.png') }}" alt="">
+                                <img src="{{ asset('images/daily-plan-3.png') }}" alt="">
                             </div>
                             <div class="column">
-                                <img src="{{ asset('images/our-story-4.png') }}" alt="">
+                                <img src="{{ asset('images/daily-plan-4.png') }}" alt="">
                             </div>
                         </div>
                     </div>
