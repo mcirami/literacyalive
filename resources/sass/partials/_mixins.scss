@@ -1,12 +1,21 @@
 @use "variables";
 
-@mixin proximaReg {
-    font-family: "proxima-nova-regular", sans-serif;
+@mixin interReg {
+    font-family: "inter-regular", sans-serif;
 }
 
-@mixin proximaBold {
-    font-family: "proxima-nova-bold", sans-serif;
+@mixin interItalic {
+    font-family: "inter-italic", sans-serif;
 }
+
+@mixin interBold {
+    font-family: "inter-bold", sans-serif;
+}
+
+@mixin boldoaMat {
+    font-family: "boldoa-mat", sans-serif;
+}
+
 
 @mixin query($screen) {
     @each $key, $value in variables.$bp {
@@ -15,20 +24,5 @@
                 @content;
             }
         }
-    }
-}
-
-@mixin dottedUnderline {
-    padding-bottom: 20px;
-
-    &:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 6px; /* Adjust the thickness of the dotted line */
-        background: radial-gradient(circle closest-side, variables.$darkBlue 80%, transparent 80%);
-        background-size: 20px 6px; /* Adjust the spacing between dots */
     }
 }

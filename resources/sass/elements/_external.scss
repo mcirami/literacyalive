@@ -1,91 +1,261 @@
 @use "../partials/variables";
 @use "../partials/mixins";
 
-nav a.active {
-    border-bottom: 3px solid variables.$yellow;
-}
+section.our_story {
 
-.our_story {
-    background: variables.$lightYellow url('/images/about-us-hero.png') no-repeat right top;
-    background-size: cover;
-}
+    h2 {
+        color: variables.$black;
+    }
 
-.director {
-    background: variables.$lightYellow;
-}
+    p {
+        color: variables.$gray;
+        font-size: 1rem;
 
-.faq {
-    background: variables.$lightYellow;
-
-    #accordion-collapse {
-        background: variables.$white;
-        border: 1px solid variables.$black;
-
-        h2 {
-            font-size: 1.6rem;
-            color: variables.$black;
-        }
-
-        button {
-            @include mixins.proximaReg;
-            background-color: unset;
-            color: variables.$black;
-        }
-
-        #accordion-collapse-heading-1:has(~ .hidden) {
-            color: variables.$darkBlue;
+        span {
+            @include mixins.boldoaMat;
+            line-height: 1.2;
+            font-size: 1.8rem;
         }
     }
 }
 
-.contact, .register {
-    background: variables.$lightYellow;
+.mission {
 
-    textarea {
-        background: variables.$white;
+    .image_wrap {
+        background: url('../../../public/images/about-mission.png') no-repeat center;
+        background-size: 100%;
+        position: relative;
+        border-radius: 80px;
+        -webkit-border-radius: 80px;
+        -moz-border-radius: 80px;
+        padding: 40px 150px;
+
+        @include mixins.query(tablet) {
+            padding: 0 75px;
+        }
+
+        @include mixins.query(mobile) {
+            background: none;
+            padding: 0 60px;
+        }
+
+        /*img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 80px;
+            -webkit-border-radius: 80px;
+            -moz-border-radius: 80px;
+            z-index: 1;
+        }*/
+
+        .image_content {
+           /* position: absolute;
+            top: 8%;
+            left: 8%;*/
+            background: variables.$orange;
+            max-width: 24rem;
+            border-radius: 233px;
+            padding: 10% 60px;
+            z-index: 2;
+            position: relative;
+
+            @include mixins.query(desktop) {
+                padding: 15% 60px;
+            }
+
+            @include mixins.query(tablet) {
+                border-radius: 175px;
+                padding: 8% 50px;
+                max-width: 18rem;
+            }
+
+            @include mixins.query(mobile) {
+                margin: 0 auto;
+            }
+
+            p {
+                color: variables.$white;
+                font-size: 1rem;
+
+                @include mixins.query(tablet) {
+                    font-size: .8rem;
+                }
+            }
+
+            h2 {
+                @include mixins.query(tablet) {
+                    font-size: 2.8rem;
+                }
+            }
+        }
     }
-    .alert-success {
-        border: 1px solid variables.$black;
-        padding: 60px 20px;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
+}
 
+section.director {
+
+    h2 {
+        font-size: 1.8rem;
+        text-transform: none;
+        color: variables.$gray;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: variables.$gray;
+    }
+}
+
+section.faq {
+    h2 {
+        color: variables.$black;
+    }
+}
+
+#accordion-collapse {
+    background: variables.$white;
+
+    h2 {
+        font-size: 1.8rem;
+        line-height: 1;
+
+        @include mixins.query(mobile) {
+            font-size: 1.5rem;
+        }
+    }
+
+    button {
+        background-color: unset;
+        color: variables.$blue;
+        text-align: left;
+    }
+
+    p {
+        color: variables.$gray;
+        font-size: 1.1rem;
+    }
+
+    #accordion-collapse-heading-1:has(~ .hidden) {
+        color: variables.$blue;
+    }
+}
+
+
+section {
+
+    .sub_heading {
+        @include mixins.boldoaMat;
+        color: variables.$gray;
+        max-width: 800px;
+        font-size: 2rem;
+    }
+
+    &.contact, &.register {
+
+        textarea, input, select {
+            border: 1px solid variables.$borderGray;
+            background: variables.$lightGray;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            padding: 10px 15px;
+            font-size: .9rem;
+        }
+
+        .alert-success {
+            border: 1px solid variables.$black;
+            padding: 60px 20px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                color: variables.$blue;
+            }
+        }
+
+        .alert-danger {
+            color: red;
+        }
+    }
+
+    .bg_content_wrap {
+        background: url('../../../public/images/content-bg.png') no-repeat center;
+        background-size: 100%;
+    }
+
+    .schedule ul li p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+        span {
+            @include mixins.interReg;
+            min-width: 60px;
+        }
+    }
+
+    &.location {
+
+        .about_us.details {
+            .text_wrap {
+                > p {
+                    color: variables.$gray;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+.schedule {
+    .column {
         p {
-            font-size: 1.3rem;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            color: variables.$darkBlue;
+            @include mixins.boldoaMat;
+            color: variables.$gray;
+            font-size: 1.5rem;
         }
     }
+}
 
-    .alert-danger {
-        color: red;
+.about_us.bring {
+    padding-bottom: 28%;
+    h2 {
+        color: variables.$black;
+    }
+
+    p {
+        color: variables.$gray;
     }
 }
 
-.schedule, .themes, .location, .register {
-    background: variables.$lightYellow;
-}
+.arrival {
+    background: url('../../../public/images/arrival-bg.png') no-repeat center bottom;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 10%;
 
-.schedule ul li p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    @include mixins.query(mobile) {
+        background: url('../../../public/images/arrival-bg-mobile.png') no-repeat center bottom;
+        background-size: cover;
+    }
 
-    span {
-        @include mixins.proximaBold;
-        min-width: 60px;
+    p {
+        color: variables.$white;
     }
 }
+
 .register {
     .two_columns {
         @include mixins.query(mobile) {

@@ -1,26 +1,22 @@
 
 $black: #000000;
 $white: #ffffff;
-$darkBlue: #0f606b;
-$yellow: #f5ed1e;
+$pink: #CCC4A9;
+$green: #A8C524;
+$orange: #F0612A;
+$lightOrange: #FBBA54;
+$gray: #626262;
+$lightGray: #FDF0F5;
+$darkGray: #3b3b3b;
+$borderGray: #EAACC4;
+$blue: #0091D0;
 $yellowHover: #cfc809;
-$lightYellow: #f6f6e9;
-
-$box1bg: #bfe5e8;
-$box1Txt: #769597;
-$box2bg: #efece5;
-$box2Txt: #a4987b;
-$box3bg: #ddebeb;
-$box3Txt: #648c8c;
-$box4bg: #edd9b7;
-$box4Txt: #8f7953;
-$box5bg: #f0c3ce;
-$box5Txt: #935e6b;
+$yellow: yellow;
 
 $bp: (
-    small: 40rem,
-    smallMobile: 48rem,
-    mobile: 64rem,
-    tablet: 80rem,
-    desktop: 96rem
+    small: 450px,
+    smallMobile: 550px,
+    mobile: 768px,
+    tablet: 1024px,
+    desktop: 1199px
 )

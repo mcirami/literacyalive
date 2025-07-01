@@ -2,43 +2,132 @@
 @use "../partials/variables";
 
 header {
-    background-color: variables.$darkBlue;
+    position: fixed;
+    top: 20px;
 
+    nav {
+        background: variables.$white;
+    }
+
+    #navbar-default {
+
+        @include mixins.query(tablet) {
+            position: absolute;
+            top: 40px;
+        }
+
+        @include mixins.query(mobile) {
+            top: 30px;
+        }
+
+        .menu_wrap {
+            @include mixins.query(tablet) {
+                background: variables.$white;
+                padding: 0 20px 20px;
+                margin: 0 auto;
+                border-bottom-right-radius: 40px;
+                border-bottom-left-radius: 40px;
+                -webkit-border-bottom-left-radius: 40px;
+                -webkit-border-bottom-right-radius: 40px;
+            }
+            @include mixins.query(smallMobile) {
+                max-width: 450px;
+            }
+        }
+    }
     a {
-        @include mixins.proximaBold;
+        @include mixins.boldoaMat;
+        font-size: 1.4rem;
+        position: relative;
 
         @include mixins.query(desktop) {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
         &:not(.button) {
-            color: variables.$white;
+            color: variables.$pink;
 
             &:hover {
-                color: variables.$yellow;
+                color: variables.$orange;
+
+                &:before {
+                    content: '';
+                    background: url('../../../public/images/link-hover.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    top: 30px;
+                    right: 30%;
+                    width: 25px;
+                    height: 25px;
+
+                    @include mixins.query(tablet) {
+                        top: 25px;
+                    }
+                }
+            }
+        }
+
+        &.active {
+            color: variables.$orange;
+
+            &:before {
+                content: '';
+                background: url('../../../public/images/link-hover.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                top: 30px;
+                right: 30%;
+                width: 25px;
+                height: 25px;
+
+                @include mixins.query(tablet) {
+                    top: 25px;
+                }
             }
         }
     }
 
+    .hide_mobile {
+        @include mixins.query(tablet) {
+            display: none;
+        }
+    }
+
+    .show_mobile {
+        display: none;
+
+        @include mixins.query(tablet) {
+            display: flex;
+        }
+    }
+
     svg {
-        color: variables.$white;
+        color: variables.$orange;
         width: 40px;
         height: 40px;
     }
 }
 
 footer {
-    background: variables.$darkBlue;
+    background: variables.$white;
 
     .copyright {
-        color: #a0dae2;
+        @include mixins.boldoaMat;
+        color: variables.$black;
     }
 
     a {
+        @include mixins.boldoaMat;
+        text-transform: uppercase;
+        color: variables.$pink;
         font-size: 1.2rem;
 
         @include mixins.query(mobile) {
             font-size: 1rem;
+        }
+
+        &.active {
+            color: variables.$orange;
         }
     }
 }

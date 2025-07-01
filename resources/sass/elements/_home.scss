@@ -1,13 +1,37 @@
 @use "../partials/mixins";
 @use "../partials/variables";
 .hero {
-    background: variables.$lightYellow;
+    background: url('../../../public/images/home-hero.png') no-repeat bottom;
+    background-size: cover;
+    padding: 10% 0 30%;
 
     @include mixins.query(tablet) {
-        padding-top: 100px;
+        padding: 15% 0 45%;
+    }
+
+    @include mixins.query(smallMobile) {
+        padding: 20% 0 55%;
+    }
+
+    @include mixins.query(small) {
+        padding: 30% 0 65%;
+    }
+
+    .content_wrap {
+        max-width: 450px;
     }
 
     h2 {
+        font-size: 3rem;
+        @include mixins.query(tablet) {
+            font-size: 2.5rem;
+        }
+
+        @include mixins.query(mobile) {
+            font-size: 2rem;
+        }
+
+
         span {
             background: variables.$white;
             padding: 5px;
@@ -17,154 +41,32 @@
         margin-bottom: 30px;
     }
 }
-.challenge {
-    background: url('/images/challenge-bg.png') no-repeat center;
+.about_us {
+    background: url('../../../public/images/home-about-us.png') no-repeat top;
     background-size: cover;
+    padding: 2% 0 24%;
 
-    h2 {
-        position: relative;
-        display: inline-block;
-    }
+    p:not(.sub_heading) {
+        color: variables.$gray;
+        font-size: 1.1rem;
 
-    h4 {
-        @include mixins.proximaBold;
-        font-size: 1.2rem;
-    }
-}
-.boxes {
-
-    .column {
-        max-width: 22rem;
-        padding: 20px;
-        text-align: left;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        position: relative;
-
-        h3 {
-            font-size: 3.4rem;
-        }
-
-        .circle {
-            width: 70px;
-            height: 70px;
-            background: #fff;
-            position: absolute;
-            right: -20px;
-            top: -20px;
-            border-radius: 45px;
-            -webkit-border-radius:  45px;
-            -moz-border-radius:  45px;
-            padding: 18px;
-
-            .inner_circle {
-                width: 100%;
-                height: 100%;
-                border-radius: 50px;
-            }
-        }
-
-        &.box1 {
-            background: variables.$box1bg;
-
-            .inner_circle {
-                background: variables.$box1bg;
-            }
-
-            h3 {
-                color: variables.$box1Txt;
-            }
-        }
-
-        &.box2 {
-            background: variables.$box2bg;
-
-            .inner_circle {
-                background: variables.$box2bg;
-            }
-
-            h3 {
-                color: variables.$box2Txt;
-            }
-        }
-
-        &.box3 {
-            background: variables.$box3bg;
-
-            .inner_circle {
-                background: variables.$box3bg;
-            }
-
-            h3 {
-                color: variables.$box3Txt;
-            }
-        }
-
-        &.box4 {
-            background: variables.$box4bg;
-
-            .inner_circle {
-                background: variables.$box4bg;
-            }
-
-            .inner_circle {
-                background: variables.$box4bg;
-            }
-
-            h3 {
-                color: variables.$box4Txt;
-            }
-        }
-
-        &.box5 {
-            background: variables.$box5bg;
-
-            .inner_circle {
-                background: variables.$box5bg;
-            }
-
-            h3 {
-                color: variables.$box5Txt;
-            }
+        span {
+            @include mixins.interBold;
         }
     }
 }
+.themes {
+    background: url('../../../public/images/home-daily-themes.png') no-repeat top;
+    background-size: cover;
+    color: variables.$white;
 
-.fundraising {
-    background: variables.$darkBlue;
-
-    .image_col {
-        position: relative;
-
-        &.left {
-            right: -60px;
-
-            @include mixins.query(desktop) {
-                right: -40px;
-            }
-
-            @include mixins.query(tablet) {
-                right: 0;
-            }
-        }
-
-        &.right {
-            left: -60px;
-
-            @include mixins.query(desktop) {
-                left: -40px;
-            }
-
-            @include mixins.query(tablet) {
-                left: 0;
-            }
-        }
-    }
 }
 
-.community {
-    background: variables.$lightYellow url('/images/community-bg.png') no-repeat right top;
+.home_register {
+    background: variables.$pink url('../../../public/images/home-register.png') no-repeat center bottom;
+    background-size: cover;
+    padding-bottom: 18%;
+    color: variables.$white;
 
     .button_row {
         padding: 0 20px;
@@ -175,5 +77,95 @@
             padding: 0;
         }
     }
+
+    span {
+        &.font-bold {
+            @include mixins.interBold;
+        }
+
+        &.yellow {
+            color: yellow !important;
+        }
+    }
+
+    .sub_heading_box {
+        margin: 20px auto;
+        max-width: 625px;
+        padding: 10px;
+        border: 1px solid variables.$white;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        position: relative;
+
+        p {
+            font-size: 1.6rem;
+
+            @include mixins.query(mobile) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &:before, &:after {
+            content: '';
+            background: url('../../../public/images/frame-line.png') no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 50%;
+            left: -76px;
+            width: 75px;
+            height: 8px;
+            transform: translateY(-40%);
+        }
+
+        &:after {
+            left: auto;
+            right: -76px;
+            transform: rotate(180deg);
+        }
+    }
 }
 
+.join_now {
+    background: url('../../../public/images/home-register-bottom.png') no-repeat top;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.text_scroll {
+
+    h3 {
+        color: variables.$blue;
+        font-size: 1.8rem;
+        position: relative;
+
+        @include mixins.query(tablet) {
+            font-size: 1.5rem;
+        }
+
+        @include mixins.query(mobile) {
+            font-size: 3vw;
+        }
+    }
+
+    ul {
+        position: relative;
+    }
+    li {
+        position: relative;
+
+        /*h3:after {
+            content: '.';
+            font-size: 4rem;
+            color: #0091D0;
+            position: absolute;
+            top: -46px;
+            right: -150%;
+            width: 20px;
+            height: 20px;
+            z-index: 1;
+        }*/
+    }
+
+
+}

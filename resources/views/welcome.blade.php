@@ -2,134 +2,206 @@
 
 @section('content')
 
-    <section class="hero w-full pt-20 md:pt-40 pb-20">
+    <section class="hero w-full p-40">
         <div class="container mx-auto px-5">
-            <div class="columns_wrap flex flex-col lg:flex-row items-start justify-center ">
-                <div class="column mb-4 lg:mb-0 w-full lg:w-1/2 pr-0 lg:pr-20">
-                    <h2 class="mb-4">We believe learning to read can be active and fun <span>for all children!</span></h2>
-                    <p>Literacy Alive is dedicated to providing an engaging environment for children ages 5-8 learning essential reading skills at our week long summer camp.</p>
-                    <p>Each day of our summer camp will be themed and  focused on both learning and movement.</p>
-                    <a href="/about-us" class="uppercase sm:max-w-50 flex justify-between items-center button yellow text-lg">
-                        <span>More About Us</span>
-                        <span class="arrow_wrap max-w-4">
-                            <img src="{{ asset('images/button-arrow.png') }}" alt="">
-                        </span>
-                    </a>
-                </div>
-                <div class="column w-full lg:w-1/2">
-                    <img src="{{ asset('images/hero-image.png') }}" alt="">
-                </div>
+            <div class="content_wrap mx-auto">
+                <h2 class="text-center">
+                    <span class="span1">We Believe</span>
+                    learning to read can be
+                    <span class="span1">active and fun</span>
+                    for all
+                    <span class="span1">children!</span>
+                </h2>
             </div>
         </div>
     </section>
-    <section class="challenge w-full pt-20 pb-40 text-center">
+    <section class="about_us w-full text-center">
         <div class="container mx-auto px-5">
-            <h2 class="dotted mb-10">Our Daily Themes</h2>
-            <div class="text_wrap mx-auto max-w-200">
-                <p class="my-5 px-20">We have designed an active summer camp to help young students learn essential literacy skills while moving their bodies. Our program will follow the daily themes and activities as shown below!</p>
+            <div class="image_wrap max-w-50 sm:max-w-75 md:max-w-100 mx-auto mb-4">
+                <img src="{{ asset('images/logo-alt.png') }}" alt="">
             </div>
+            <div class="content_wrap max-w-150 mx-auto">
+                <p class="mb-8">is dedicated to providing an <span>engaging environment</span> for children ages 5-8 learning essential <span>reading skills</span>
+                    at our <span>week long summer camp.</span>
+                </p>
+                <p class="mb-8">
+                    Each day of our <span>summer camp</span> will be themed and focused on both <span>learning and movement.</span>
+                </p>
+                <a href="/about-us"
+                   class="flex justify-center items-center button green gap-3 text-lg uppercase max-w-60 mx-auto">
+                    More About Us
+                    <span class="arrow_wrap max-w-4 md:max-w-5">
+                        <img src="{{ asset('images/button-arrow.png') }}" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-            <div class="boxes flex flex-wrap justify-center gap-15 my-15">
-                <div class="column box1">
-                    <div class="circle">
-                        <div class="inner_circle"></div>
+    <section class="themes w-full pb-20 text-center relative">
+        <div class="container mx-auto px-5 z-2 relative">
+            <h2 class="uppercase">Our Daily Themes</h2>
+            <div class="small_container">
+                <p>We have designed an active summer camp to help young students learn essential literacy skills while
+                    moving their bodies. Our program will follow the daily themes and activities as shown below!</p>
+            </div>
+            <div class="white_box flex justify-center flex-wrap md:nowrap items-start w-full mx-auto mt-10">
+                <div class="accordion_col w-full md:w-1/2">
+                    <div id="accordion-collapse" class="text-left w-full mx-auto" data-accordion="collapse">
+                        <h2 id="accordion-collapse-heading-1">
+                            <button type="button" class="flex items-center justify-between w-full pt-5 pr-5 pb-5 rtl:text-right gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                <span>MUSIC</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                            <p class="mb-4">
+                                Incorporating music using instruments, singing, and encourage dancing while enforcing phonic skills.
+                            </p>
+                        </div>
+                        <h2 id="accordion-collapse-heading-2">
+                            <button type="button" class="flex items-center justify-between w-full pt-5 pr-5 pb-5 font-medium rtl:text-right border-t gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                                <span>SPORTS</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                            <p class="mb-4 ">
+                                Playing new versions of baseball, table football, ping pong and more while incorporating spelling skills.
+                            </p>
+                        </div>
+                        <h2 id="accordion-collapse-heading-3">
+                            <button type="button" class="flex items-center justify-between w-full pt-5 pr-5 pb-5 font-medium rtl:text-right  border-t gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                                <span>CAMPING</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                            <p class="mb-2 ">
+                                Reading in a tent, circling up around a fake fire, and reading ghost stories.
+                            </p>
+                        </div>
+
+                        <h2 id="accordion-collapse-heading-4">
+                            <button type="button" class="flex items-center justify-between w-full pt-5 pr-5 pb-5 font-medium rtl:text-right  border-t gap-3" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+                                <span>ANIMALS</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                            <p class="mb-2 ">
+                                Books, games, and songs that revolve around the students' favorite animals.
+                            </p>
+                        </div>
+                        <h2 id="accordion-collapse-heading-5">
+                            <button type="button" class="flex items-center justify-between w-full pt-5 pr-5 pb-5 font-medium rtl:text-right  border-t gap-3" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
+                                <span>PRINCESS VS HEROES</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+                            <p class="mb-2 ">
+                                Dress up as your favorite princess or super hero and act out plays.
+                            </p>
+                        </div>
                     </div>
-                    <h3>Music</h3>
-                    <p>Encorporating music using instruments, singing, and encourage dancing while enforcing phonic skills.</p>
                 </div>
-                <div class="column box2">
-                    <div class="circle">
-                        <div class="inner_circle"></div>
-                    </div>
-                    <h3>Sports</h3>
-                    <p>Playing new versions of baseball, table football, ping pong and more while encorporating spelling skills.</p>
-                </div>
-                <div class="column box3">
-                    <div class="circle">
-                        <div class="inner_circle"></div>
-                    </div>
-                    <h3>Camping</h3>
-                    <p>Reading in a tent, circling up around a fake fire, and reading ghost stories.</p>
-                </div>
-                <div class="column box4 ">
-                    <div class="circle">
-                        <div class="inner_circle"></div>
-                    </div>
-                    <h3>Animals</h3>
-                    <p>Books, games, and songs that revolve around the students' favorite animals.</p>
-                </div>
-                <div class="column box5">
-                    <div class="circle">
-                        <div class="inner_circle"></div>
-                    </div>
-                    <h3>Princesses vs Heroes</h3>
-                    <p>Dress up as your favorite princess or super hero and act out plays. </p>
+                <div class="image_col w-full md:w-1/2">
+                    <img src="{{ asset('images/music-img.png') }}" alt="">
                 </div>
             </div>
-            <h4 class="mb-4">Learn more about the Literacy Alive Summer Camp for your child by visiting our Camp Details.</h4>
-            <a href="/camp-details" class="uppercase mx-auto sm:max-w-60 flex justify-between items-center button yellow gap-6 text-lg">
-                <span>Camp Details</span>
-                <span class="arrow_wrap max-w-4">
+            <div class="w-full">
+                <div class="small_container">
+                    <p class="my-8">
+                        Learn more about the Literacy Alive Summer Camp for your child by visiting our Camp Details.
+                    </p>
+                </div>
+                <a href="/register"
+                   class="flex justify-center items-center button green gap-3 text-lg uppercase max-w-60 mx-auto">
+                    Register Now
+                    <span class="arrow_wrap max-w-4 md:max-w-5">
+                        <img src="{{ asset('images/button-arrow.png') }}" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="text_scroll">
+        <ul class="flex justify-around items-center w-full">
+            <li>
+                <h3>
+                    MUSIC
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    SPORTS
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    CAMPING
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    ANIMALS
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    PRINCESSES VS HEROES
+                </h3>
+            </li>
+        </ul>
+    </div>
+    <section class="home_register w-full pt-20 pb-40 text-center relative">
+        <div class="container mx-auto px-5">
+            <h2 class="inline-block relative">LITERACY ALIVE<br/> IS READY FOR YOUR CHILD</h2>
+            <div class="sub_heading_box">
+                <p class="">Register today to attend our Literacy Alive summer Camp 2025.</p>
+            </div>
+            <p class="mt-6 mb-4 small_container">
+                The camp will be held at Elliot Chapel, located at <span class="font-bold">100 South Taylor Ave., Kirkwood, MO 63122</span>
+                the week of <span class="yellow">July 28th through August 1st.</span>
+                Campers should arrive daily at 8:30 am and be released each day at noon.
+            </p>
+            <a href="/register"
+               class="mt-5 flex justify-center items-center button green gap-3 text-lg uppercase max-w-60 mx-auto">
+                Register Now
+                <span class="arrow_wrap max-w-4 md:max-w-5">
                     <img src="{{ asset('images/button-arrow.png') }}" alt="">
                 </span>
             </a>
         </div>
     </section>
-
-    <section class="fundraising w-full pb-20 text-center relative">
-        <div class="slanted_div alt z-1"></div>
-        <div class="container mx-auto px-5 z-2 relative">
-            <div  class="flex items-center justify-center">
-                <div class="image_col left">
-                    <img src="{{ asset('images/girl-graphic.png') }}" alt="">
-                </div>
-                <div class="content_col">
-                    <h2 class="text-white">Literacy Alive is ready for your child!</h2>
-                    <p class="text-white my-5 max-w-200 mx-auto">Register today to attend our Literacy Alive Summer Camp 2025. <br>The camp will be held at Elliot Chapel, located at 100 South Taylor Ave., Kirkwood, MO 63122<br> the week of July 28th through August 1st. <br>Campers should arrive daily at 8:30 am and be released each day at noon.   </p>
-                    <a href="/camp-register" class="uppercase mx-auto sm:max-w-60 flex justify-between items-center button white gap-6 text-lg">
-                        <span>Register Now</span>
-                        <span class="arrow_wrap max-w-4">
+    <section class="join_now w-full text-center">
+        <div class="container mx-auto p-5">
+            <div class="orange_box flex-wrap sm:flex-nowrap md:columns-2 mx-auto flex justify-start items-center w-full text-left">
+                <div class="text_col w-full sm:w-2/3">
+                    <h2>JOIN US AND MAKE LITERACY COME ALIVE</h2>
+                    <p>Register or <span>get in touch today!</span></p>
+                    <a href="/register"
+                       class="mt-5 flex justify-center items-center button green gap-3 text-lg uppercase xs:max-w-60">
+                        Register Now
+                        <span class="arrow_wrap max-w-4 md:max-w-5">
                             <img src="{{ asset('images/button-arrow.png') }}" alt="">
                         </span>
                     </a>
                 </div>
-                <div class="image_col right">
-                    <img src="{{ asset('images/rainbow-bird.png') }}" alt="">
+                <div class="image_col w-full sm:w-1/3">
+                    <img src="{{ asset('images/join-boy.png') }}" alt="">
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="community w-full pt-20 pb-40 text-center relative">
-        <div class="container mx-auto px-5">
-            <h2 class="dotted inline-block relative pb-10 mb-10">Help us make Literacy Alive</h2>
-            <p class="mt-6 mb-4">Register or get in touch today!</p>
-            <div class="two_columns flex justify-center max-w-200 mx-auto">
-                <div class="column flex-shrink-2">
-                    <img src="{{ asset('images/community-col-1.png') }}" alt="">
-                </div>
-                <div class="column flex-shrink-2">
-                    <img src="{{ asset('images/community-col-2.png') }}" alt="">
-                </div>
-            </div>
-            <div class="button_row  w-full max-w-200 mx-auto flex flex-col sm:flex-row justify-center items-center mt-5 gap-3 lg:gap-5">
-                <a href="/camp-register" class="uppercase w-full mx-auto flex justify-between items-center button yellow text-lg">
-                    <span>Register Now</span>
-                    <span class="arrow_wrap max-w-4">
-                            <img src="{{ asset('images/button-arrow.png') }}" alt="">
-                        </span>
-                </a>
-                <a href="/faq" class="uppercase w-full mx-auto flex justify-between items-center button yellow text-lg">
-                    <span>FAQ</span>
-                    <span class="arrow_wrap max-w-4">
-                            <img src="{{ asset('images/button-arrow.png') }}" alt="">
-                        </span>
-                </a>
-                <a href="/contact-us" class="uppercase w-full flex justify-between items-center button yellow text-lg">
-                    <span>Contact Us</span>
-                    <span class="arrow_wrap max-w-4">
-                        <img src="{{ asset('images/button-arrow.png') }}" alt="">
-                    </span>
-                </a>
             </div>
         </div>
     </section>
