@@ -45,7 +45,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="/camp-register"
+                        <a href="/camp-registration"
                            class="flex justify-center items-center button green gap-3 text-lg show_mobile">
                             REGISTER NOW
                             <span class="arrow_wrap max-w-4 md:max-w-5">
@@ -54,7 +54,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="/camp-register"
+                <a href="/camp-registration"
                    class="flex justify-center items-center button green gap-3 text-lg hide_mobile">
                     REGISTER NOW
                     <span class="arrow_wrap max-w-4 md:max-w-5">

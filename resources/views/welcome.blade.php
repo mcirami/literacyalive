@@ -126,7 +126,7 @@
                         Learn more about the Literacy Alive Summer Camp for your child by visiting our Camp Details.
                     </p>
                 </div>
-                <a href="/register"
+                <a href="/camp-registration"
                    class="flex justify-center items-center button green gap-3 text-lg uppercase max-w-60 mx-auto">
                     Register Now
                     <span class="arrow_wrap max-w-4 md:max-w-5">
@@ -176,7 +176,7 @@
                 the week of <span class="yellow">July 28th through August 1st.</span>
                 Campers should arrive daily at 8:30 am and be released each day at noon.
             </p>
-            <a href="/register"
+            <a href="/camp-registration"
                class="mt-5 flex justify-center items-center button green gap-3 text-lg uppercase max-w-60 mx-auto">
                 Register Now
                 <span class="arrow_wrap max-w-4 md:max-w-5">
@@ -191,7 +191,7 @@
                 <div class="text_col w-full sm:w-2/3">
                     <h2>JOIN US AND MAKE LITERACY COME ALIVE</h2>
                     <p>Register or <span>get in touch today!</span></p>
-                    <a href="/register"
+                    <a href="/camp-registration"
                        class="mt-5 flex justify-center items-center button green gap-3 text-lg uppercase xs:max-w-60">
                         Register Now
                         <span class="arrow_wrap max-w-4 md:max-w-5">

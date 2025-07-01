@@ -45,7 +45,7 @@
             <p class="mt-6 mb-4 small_container">
                 Space is limited! We are trying to keep a small ratio of staff to campers. When we reach 24 enrolled campers we will turn off registration. If there is a lot more interest, we will look into offering another week of camp during the first week of August.
             </p>
-            <a href="/register"
+            <a href="/camp-registration"
                class="mt-5 flex justify-center items-center button green gap-3 text-lg uppercase max-w-60 mx-auto">
                 Register Now
                 <span class="arrow_wrap max-w-4 md:max-w-5">

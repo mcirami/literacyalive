@@ -162,6 +162,10 @@ section {
             font-size: .9rem;
         }
 
+        input#phone, input#emergency_phone {
+            padding: 10px 40px;
+        }
+
         .alert-success {
             border: 1px solid variables.$black;
             padding: 60px 20px;
