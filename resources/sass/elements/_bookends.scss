@@ -52,7 +52,7 @@ header {
 
                 &:before {
                     content: '';
-                    background: url('../../../public/images/link-hover.png') no-repeat;
+                    background: url('/images/link-hover.png') no-repeat;
                     background-size: 100%;
                     position: absolute;
                     top: 30px;
@@ -72,7 +72,7 @@ header {
 
             &:before {
                 content: '';
-                background: url('../../../public/images/link-hover.png') no-repeat;
+                background: url('/images/link-hover.png') no-repeat;
                 background-size: 100%;
                 position: absolute;
                 top: 30px;

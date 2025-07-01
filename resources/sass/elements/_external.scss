@@ -22,7 +22,7 @@ section.our_story {
 .mission {
 
     .image_wrap {
-        background: url('../../../public/images/about-mission.png') no-repeat center;
+        background: url('/images/about-mission.png') no-repeat center;
         background-size: 100%;
         position: relative;
         border-radius: 80px;
@@ -185,7 +185,7 @@ section {
     }
 
     .bg_content_wrap {
-        background: url('../../../public/images/content-bg.png') no-repeat center;
+        background: url('/images/content-bg.png') no-repeat center;
         background-size: 100%;
     }
 
@@ -241,13 +241,13 @@ section {
 }
 
 .arrival {
-    background: url('../../../public/images/arrival-bg.png') no-repeat center bottom;
+    background: url('/images/arrival-bg.png') no-repeat center bottom;
     background-size: cover;
     height: auto;
     padding-bottom: 10%;
 
     @include mixins.query(mobile) {
-        background: url('../../../public/images/arrival-bg-mobile.png') no-repeat center bottom;
+        background: url('/images/arrival-bg-mobile.png') no-repeat center bottom;
         background-size: cover;
     }
 

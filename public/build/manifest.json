@@ -1,57 +1,97 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-Rmb-xx-N.css",
+    "file": "assets/app-B7qNhKWw.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
-  "resources/fonts/ProximaNova-Bold.eot": {
-    "file": "assets/ProximaNova-Bold-DesTZSjL.eot",
-    "src": "resources/fonts/ProximaNova-Bold.eot"
+  "resources/fonts/boldoa_mat-webfont.eot": {
+    "file": "assets/boldoa_mat-webfont-atgVK3IL.eot",
+    "src": "resources/fonts/boldoa_mat-webfont.eot"
   },
-  "resources/fonts/ProximaNova-Bold.svg": {
-    "file": "assets/ProximaNova-Bold-BhSgHrWe.svg",
-    "src": "resources/fonts/ProximaNova-Bold.svg"
+  "resources/fonts/boldoa_mat-webfont.svg": {
+    "file": "assets/boldoa_mat-webfont-DAkXFAs6.svg",
+    "src": "resources/fonts/boldoa_mat-webfont.svg"
   },
-  "resources/fonts/ProximaNova-Bold.ttf": {
-    "file": "assets/ProximaNova-Bold-DvQ_TT3F.ttf",
-    "src": "resources/fonts/ProximaNova-Bold.ttf"
+  "resources/fonts/boldoa_mat-webfont.ttf": {
+    "file": "assets/boldoa_mat-webfont-BxosDyAw.ttf",
+    "src": "resources/fonts/boldoa_mat-webfont.ttf"
   },
-  "resources/fonts/ProximaNova-Bold.woff": {
-    "file": "assets/ProximaNova-Bold-pP1iG9pT.woff",
-    "src": "resources/fonts/ProximaNova-Bold.woff"
+  "resources/fonts/boldoa_mat-webfont.woff": {
+    "file": "assets/boldoa_mat-webfont-BZYzKpIx.woff",
+    "src": "resources/fonts/boldoa_mat-webfont.woff"
   },
-  "resources/fonts/ProximaNova-Bold.woff2": {
-    "file": "assets/ProximaNova-Bold-M4dSJvKq.woff2",
-    "src": "resources/fonts/ProximaNova-Bold.woff2"
+  "resources/fonts/boldoa_mat-webfont.woff2": {
+    "file": "assets/boldoa_mat-webfont-CXqhhOLx.woff2",
+    "src": "resources/fonts/boldoa_mat-webfont.woff2"
   },
-  "resources/fonts/ProximaNova-Regular.eot": {
-    "file": "assets/ProximaNova-Regular-Cf96Peo5.eot",
-    "src": "resources/fonts/ProximaNova-Regular.eot"
+  "resources/fonts/inter-bold-webfont.eot": {
+    "file": "assets/inter-bold-webfont-DRz1Ho56.eot",
+    "src": "resources/fonts/inter-bold-webfont.eot"
   },
-  "resources/fonts/ProximaNova-Regular.svg": {
-    "file": "assets/ProximaNova-Regular-BIgjE7Kx.svg",
-    "src": "resources/fonts/ProximaNova-Regular.svg"
+  "resources/fonts/inter-bold-webfont.svg": {
+    "file": "assets/inter-bold-webfont-DHt92L1e.svg",
+    "src": "resources/fonts/inter-bold-webfont.svg"
   },
-  "resources/fonts/ProximaNova-Regular.ttf": {
-    "file": "assets/ProximaNova-Regular-BXM5SWhd.ttf",
-    "src": "resources/fonts/ProximaNova-Regular.ttf"
+  "resources/fonts/inter-bold-webfont.ttf": {
+    "file": "assets/inter-bold-webfont-BaudSVUI.ttf",
+    "src": "resources/fonts/inter-bold-webfont.ttf"
   },
-  "resources/fonts/ProximaNova-Regular.woff": {
-    "file": "assets/ProximaNova-Regular-B71zhyMd.woff",
-    "src": "resources/fonts/ProximaNova-Regular.woff"
+  "resources/fonts/inter-bold-webfont.woff": {
+    "file": "assets/inter-bold-webfont-1QOZSv4K.woff",
+    "src": "resources/fonts/inter-bold-webfont.woff"
   },
-  "resources/fonts/ProximaNova-Regular.woff2": {
-    "file": "assets/ProximaNova-Regular-dxJMJVm_.woff2",
-    "src": "resources/fonts/ProximaNova-Regular.woff2"
+  "resources/fonts/inter-bold-webfont.woff2": {
+    "file": "assets/inter-bold-webfont-CEArhpJj.woff2",
+    "src": "resources/fonts/inter-bold-webfont.woff2"
+  },
+  "resources/fonts/inter-italic-webfont.eot": {
+    "file": "assets/inter-italic-webfont-CJsJdTGR.eot",
+    "src": "resources/fonts/inter-italic-webfont.eot"
+  },
+  "resources/fonts/inter-italic-webfont.svg": {
+    "file": "assets/inter-italic-webfont-r1sbSUWY.svg",
+    "src": "resources/fonts/inter-italic-webfont.svg"
+  },
+  "resources/fonts/inter-italic-webfont.ttf": {
+    "file": "assets/inter-italic-webfont-DgDH0ZHG.ttf",
+    "src": "resources/fonts/inter-italic-webfont.ttf"
+  },
+  "resources/fonts/inter-italic-webfont.woff": {
+    "file": "assets/inter-italic-webfont-CGnvWvq5.woff",
+    "src": "resources/fonts/inter-italic-webfont.woff"
+  },
+  "resources/fonts/inter-italic-webfont.woff2": {
+    "file": "assets/inter-italic-webfont-qh_G2_IJ.woff2",
+    "src": "resources/fonts/inter-italic-webfont.woff2"
+  },
+  "resources/fonts/inter-regular-webfont.eot": {
+    "file": "assets/inter-regular-webfont-BFBZwtur.eot",
+    "src": "resources/fonts/inter-regular-webfont.eot"
+  },
+  "resources/fonts/inter-regular-webfont.svg": {
+    "file": "assets/inter-regular-webfont-BxhStmGu.svg",
+    "src": "resources/fonts/inter-regular-webfont.svg"
+  },
+  "resources/fonts/inter-regular-webfont.ttf": {
+    "file": "assets/inter-regular-webfont-QdR2D6cW.ttf",
+    "src": "resources/fonts/inter-regular-webfont.ttf"
+  },
+  "resources/fonts/inter-regular-webfont.woff": {
+    "file": "assets/inter-regular-webfont-CJtZbyFx.woff",
+    "src": "resources/fonts/inter-regular-webfont.woff"
+  },
+  "resources/fonts/inter-regular-webfont.woff2": {
+    "file": "assets/inter-regular-webfont-r-fiXapD.woff2",
+    "src": "resources/fonts/inter-regular-webfont.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-B3yArc-m.js",
+    "file": "assets/app-9CB9ET5E.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-Z2IRynxY.css",
+    "file": "assets/app-Dd_VjLqp.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   }
