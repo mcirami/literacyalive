@@ -1,7 +1,7 @@
 <footer class="w-full text-center relative">
     <div class="container mx-auto px-2 md:px-5 z-2 relative">
         <div class="logo mx-auto max-w-60 md:max-w-80 flex justify-center items-center">
-            <a class="w-full" href="/">
+            <a class="w-full logo_wrap" href="/">
                 <img src="{{ asset('images/logo.png') }}" alt="">
             </a>
         </div>

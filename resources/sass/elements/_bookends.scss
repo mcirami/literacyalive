@@ -44,7 +44,7 @@ header {
             font-size: 1.2rem;
         }
 
-        &:not(.button) {
+        &:not(.button):not(.logo) {
             color: variables.$pink;
 
             &:hover {
