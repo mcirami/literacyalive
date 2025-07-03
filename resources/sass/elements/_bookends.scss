@@ -67,7 +67,7 @@ header {
             }
         }
 
-        &.active {
+        &.active:not(.button):not(.logo) {
             color: variables.$orange;
 
             &:before {
