@@ -66,6 +66,7 @@ class StripeService {
             ]],
             // Put only what you need; avoid excess PII. Email is already customer_email.
             'metadata' => [
+                'date_id'       => $dateId,
                 'date_label' => $dateLabels[$dateId] ?? null,
                 'register_name' => $data['name'],
                 'child_name' => $data['child_name'],

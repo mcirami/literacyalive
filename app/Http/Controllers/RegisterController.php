@@ -60,7 +60,7 @@ class RegisterController extends Controller
         //$data = session('campRegisterData');
         $sessionId = $request->query('session_id', '');
 
-        if (!$sessionId || $sessionId === '{CHECKOUT_SESSION_ID}') {
+        if ($sessionId === '' || $sessionId === '{CHECKOUT_SESSION_ID}' || stripos($sessionId, '%7B') !== false) {
             return redirect()->route('register.show')->withErrors('Missing session_id.');
         }
 
@@ -86,6 +86,7 @@ class RegisterController extends Controller
         $meta = $session->metadata ?? new \stdClass();
         $data = [
             'date' => $meta->date_label ?? null, // human-readable label if you stored it
+            'date_id'    => $meta->date_id   ?? null,
             'email' => optional($session->customer_details)->email ?? $session->customer_email,
             'name' => $meta->register_name ?? null,
             'child_name' => $meta->child_name ?? null,
