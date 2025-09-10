@@ -23,7 +23,7 @@
                 @if ( session()->has('success') )
                     <div class="alert alert-success max-w-200 mx-auto mb-6 my-20">
                         <h2>You Successfully Registered!</h2>
-                        <p class="mt-10">Thanks for signing up for camp on {{ session('selected_date_id') }}!</p>
+                        <p class="mt-10">Thanks for signing up for camp on {{ session('selected_date') }}!</p>
                         <p>We will get back to you with all the information you need to join us at the camp.</p>
                     </div>
                 @else

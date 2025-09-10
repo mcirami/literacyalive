@@ -55,7 +55,9 @@ class RegisterController extends Controller
         return redirect()->away($checkoutSession->url);
     }
 
-    public function purchaseSuccess(Request $request, StripeClient $stripe) {
+    public function purchaseSuccess(Request $request, StripeService $stripeService) {
+
+        $stripe = $stripeService->createStripeGateway();
         // Grab the form data from the session
         //$data = session('campRegisterData');
         $sessionId = $request->query('session_id', '');
@@ -86,7 +88,6 @@ class RegisterController extends Controller
         $meta = $session->metadata ?? new \stdClass();
         $data = [
             'date' => $meta->date_label ?? null, // human-readable label if you stored it
-            'date_id'    => $meta->date_id   ?? null,
             'email' => optional($session->customer_details)->email ?? $session->customer_email,
             'name' => $meta->register_name ?? null,
             'child_name' => $meta->child_name ?? null,
@@ -106,7 +107,7 @@ class RegisterController extends Controller
             ->route('register.show')
             ->with([
                 'success' => 'You Successfully Registered!',
-                'selected_date_id' => $data['date_id'],
+                'selected_date' => $data['date'],
             ]);
     }
 }
