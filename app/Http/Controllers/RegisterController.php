@@ -58,14 +58,15 @@ class RegisterController extends Controller
     public function purchaseSuccess(Request $request, StripeClient $stripe) {
         // Grab the form data from the session
         //$data = session('campRegisterData');
-        $sessionId = $request->string('session_id');
-        if ($sessionId->isEmpty()) {
+        $sessionId = $request->query('session_id', '');
+
+        if (!$sessionId || $sessionId === '{CHECKOUT_SESSION_ID}') {
             return redirect()->route('register.show')->withErrors('Missing session_id.');
         }
 
         try {
             // Expand to get richer data in a single call
-            $session = $stripe->checkout->sessions->retrieve($sessionId->toString(), [
+            $session = $stripe->checkout->sessions->retrieve($sessionId, [
                 'expand' => ['payment_intent', 'customer', 'line_items']
             ]);
         } catch (ApiErrorException $e) {

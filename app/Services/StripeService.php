@@ -51,7 +51,7 @@ class StripeService {
         ];
         // Build URLs
         // Use the session-id placeholder so we can fetch data after redirect; avoid putting PII in the URL.
-        $successUrl = route('purchase.success', ['session_id' => '{CHECKOUT_SESSION_ID}']);
+        $successUrl = route('purchase.success') . '?session_id={CHECKOUT_SESSION_ID}';
         $cancelUrl = route('register.show', ['paid' => 'fail']);
 
         // Create Checkout Session
@@ -66,7 +66,6 @@ class StripeService {
             ]],
             // Put only what you need; avoid excess PII. Email is already customer_email.
             'metadata' => [
-                'date_id' => $dateId,
                 'date_label' => $dateLabels[$dateId] ?? null,
                 'register_name' => $data['name'],
                 'child_name' => $data['child_name'],

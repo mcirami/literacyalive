@@ -14,17 +14,23 @@
                     </div>
                 @endif
 
+                @if ($errors->any())
+                    <div class="mb-4 text-sm text-red-600">
+                        {{ $errors->first() }}
+                    </div>
+                @endif
+
                 @if ( session()->has('success') )
                     <div class="alert alert-success max-w-200 mx-auto mb-6 my-20">
                         <h2>You Successfully Registered!</h2>
-                        <p class="mt-10">Thanks for signing up for camp on {{session('selected_date_id')}}!</p>
+                        <p class="mt-10">Thanks for signing up for camp on {{ session('selected_date_id') }}!</p>
                         <p>We will get back to you with all the information you need to join us at the camp.</p>
                     </div>
                 @else
                     <p class="max-w-200 mx-auto mt-5 mb-6 sub_heading">
-                        Please fill out the form below to register for camp.<br/> There is a fee of $80 for the camp.<br>
+                        Please fill out the form below to register for camp.<br> There is a fee of $80 for the camp.<br>
                         After you register you will be taken to a payment page.
-                        <br/>Please submit your payment so we can finalize your registration.
+                        <br>Please submit your payment so we can finalize your registration.
                     </p>
                         @php
                             $selectedId = old('date_id', request('date_id')); // keep old() on validation errors
@@ -48,9 +54,9 @@
                         <label for="name" class="block mb-1">Parent's Name</label>
                         <input name="name" type="text" id="name" class="block p-2.5 w-full  @error('name') mb-0 @else mb-4 @enderror" value="{{ old('name') }}" required>
                         @error('name')
-                        <div class="alert alert-danger mb-4">
-                            <h3 class="accent-red-800">{{ $message }}</h3>
-                        </div>
+                            <div class="alert alert-danger mb-4">
+                                <h3 class="accent-red-800">{{ $message }}</h3>
+                            </div>
                         @enderror
 
                         <label for="address" class="block mb-1">Address</label>
