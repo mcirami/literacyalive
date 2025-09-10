@@ -6,23 +6,27 @@ use App\Http\Controllers\RegisterController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/about-us', function() {
     return view('about-us');
-});
+})->name('about');
 
 Route::get('/daily-plan', function() {
     return view('daily-plan');
-});
+})->name('plan');
 
 Route::get('/camp-details', function() {
     return view('camp-details');
-});
+})->name('details');
+
+Route::get('/daily-workshops', function() {
+    return view('daily-workshops');
+})->name('workshops');
 
 Route::get('/faq', function() {
     return view('faq');
-});
+})->name('faq');
 
 Route::get('/contact-us', [ContactController::class, 'show'])->name('contact.show');
 Route::post('/send-contact-info', [ContactController::class, 'sendMail'])->name('contact.send');

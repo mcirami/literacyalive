@@ -35,7 +35,7 @@ header {
             }
         }
     }
-    a {
+    a, #dropdownNavbarLink {
         @include mixins.boldoaMat;
         font-size: 1.4rem;
         position: relative;
@@ -52,7 +52,7 @@ header {
 
                 &:before {
                     content: '';
-                    background: url('/images/link-hover.png') no-repeat;
+                    background: url('@images/link-hover.png') no-repeat;
                     background-size: 100%;
                     position: absolute;
                     top: 30px;
@@ -72,7 +72,7 @@ header {
 
             &:before {
                 content: '';
-                background: url('/images/link-hover.png') no-repeat;
+                background: url('@images/link-hover.png') no-repeat;
                 background-size: 100%;
                 position: absolute;
                 top: 30px;
@@ -83,6 +83,37 @@ header {
                 @include mixins.query(tablet) {
                     top: 25px;
                 }
+            }
+        }
+    }
+
+    #dropdownNavbarLink {
+
+        svg {
+            color: variables.$pink;
+        }
+
+        &:hover {
+            svg {
+                color: variables.$orange;
+            }
+        }
+    }
+
+    #dropdownNavbar {
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+
+        a {
+            color: variables.$white;
+            background: variables.$green;
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+
+            &:hover {
+                background: variables.$orange;
             }
         }
     }

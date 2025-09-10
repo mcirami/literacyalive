@@ -1,6 +1,8 @@
 <x-mail::message>
 # Camp Registration Submitted
 
+Camp Date: {{$date}}
+<br>
 <br>
 Name: {{$name}}
 <br>

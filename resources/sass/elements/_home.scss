@@ -1,7 +1,7 @@
 @use "../partials/mixins";
 @use "../partials/variables";
 .hero {
-    background: url('/images/home-hero.png') no-repeat bottom;
+    background: url('@images/home-hero.png') no-repeat bottom;
     background-size: cover;
     padding: 10% 0 30%;
 
@@ -42,7 +42,7 @@
     }
 }
 .about_us {
-    background: url('/images/home-about-us.png') no-repeat top;
+    background: url('@images/home-about-us.png') no-repeat top;
     background-size: cover;
     padding: 2% 0 24%;
 
@@ -56,14 +56,14 @@
     }
 }
 .themes {
-    background: url('/images/home-daily-themes.png') no-repeat top;
+    background: url('@images/home-daily-themes.png') no-repeat top;
     background-size: cover;
     color: variables.$white;
 
 }
 
 .home_register {
-    background: variables.$pink url('/images/home-register.png') no-repeat center bottom;
+    background: variables.$pink url('@images/home-register.png') no-repeat center bottom;
     background-size: cover;
     padding-bottom: 18%;
     color: variables.$white;
@@ -108,7 +108,7 @@
 
         &:before, &:after {
             content: '';
-            background: url('/images/frame-line.png') no-repeat;
+            background: url('@images/frame-line.png') no-repeat;
             background-size: 100%;
             position: absolute;
             top: 50%;
@@ -127,7 +127,7 @@
 }
 
 .join_now {
-    background: url('/images/home-register-bottom.png') no-repeat top;
+    background: url('@images/home-register-bottom.png') no-repeat top;
     padding: 40px 0;
     overflow: hidden;
 }

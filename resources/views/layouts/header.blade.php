@@ -9,43 +9,61 @@
                     <div class="menu_wrap w-full">
                         <ul class="font-medium flex flex-col pr-4 pt-4 pb-4 pl-0 md:p-0 mt-4 lg:flex-row space-x-2 md:space-x-4 xl:space-x-8 rtl:space-x-reverse md:mt-0">
                             <li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
-                                <a href="/"
+                                <a href="{{ route('home') }}
+"
                                    class="inline-block @if(request()->is('/')) active @endif">
                                     HOME
                                 </a>
                             </li>
                             <li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
-                                <a href="/about-us"
+                                <a href="{{ route('about') }}
+"
                                    class="inline-block @if(request()->is('about-us')) active @endif">
                                     ABOUT US
                                 </a>
                             </li>
                             <li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
-                                <a href="/daily-plan"
+                                <a href="{{ route('plan') }}
+"
                                    class="inline-block @if(request()->is('daily-plan')) active @endif">
                                     DAILY PLAN
                                 </a>
                             </li>
                             <li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
+                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full">
+                                    CAMP DETAILS
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                    </svg>
+                                </button>
+                                <div id="dropdownNavbar" class="z-10 hidden font-normal">
+                                    <ul class="py-2" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="{{ route('workshops') }}" class="block px-4 py-2">DAILY WORKSHOPS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            {{--<li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
                                 <a href="/camp-details"
                                    class="inline-block @if(request()->is('camp-details')) active @endif">
-                                    CAMP DETAILS
+                                    SUMMER CAMP
                                 </a>
-                            </li>
+                            </li>--}}
                             <li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
-                                <a href="/faq"
+                                <a href="{{ route('faq') }}"
                                    class="inline-block @if(request()->is('faq')) active @endif">
                                     FAQ
                                 </a>
                             </li>
                             <li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
-                                <a href="/contact-us"
+                                <a href="{{ route('contact.show') }}"
                                    class="inline-block @if(request()->is('contact-us')) active @endif">
                                     CONTACT US
                                 </a>
                             </li>
                         </ul>
-                        <a href="/camp-registration"
+                        <a href="{{ route('register.show') }}"
                            class="flex justify-center items-center button green gap-3 text-lg show_mobile">
                             REGISTER NOW
                             <span class="arrow_wrap max-w-4 md:max-w-5">
@@ -54,8 +72,8 @@
                         </a>
                     </div>
                 </div>
-                <a href="/camp-registration"
-                   class="flex justify-center items-center button green gap-3 text-lg hide_mobile">
+                <a href="{{ route('register.show') }}"
+                   class="data-register-link flex justify-center items-center button green gap-3 text-lg hide_mobile">
                     REGISTER NOW
                     <span class="arrow_wrap max-w-4 md:max-w-5">
                         <img src="{{ asset('images/button-arrow.png') }}" alt="">

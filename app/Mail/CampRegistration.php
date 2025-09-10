@@ -14,6 +14,8 @@ class CampRegistration extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $date;
+
     public $name;
     public $address;
     public $city;
@@ -35,6 +37,15 @@ class CampRegistration extends Mailable
      */
     public function __construct($validatedData)
     {
+        $date = 'December 22, 2025';
+        if (isset($validatedData['date'])) {
+            if($validatedData['date'] == 1) {
+                $date = 'March 16, 2026';
+            } elseif ($validatedData['date'] == 2) {
+                $date = 'March 17, 2026';
+            }
+        }
+        $this->date = $date;
         $this->name = $validatedData['name'];
         $this->address = $validatedData['address'];
         $this->city = $validatedData['city'];
@@ -73,6 +84,7 @@ class CampRegistration extends Mailable
         return new Content(
             markdown: 'mail.camp-register',
             with: [
+                'date' => $this->date,
                 'name' => $this->name,
                 'address' => $this->address,
                 'city' => $this->city,
