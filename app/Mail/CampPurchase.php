@@ -14,6 +14,7 @@ class CampPurchase extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $date;
     public $name;
     public $email;
     public $child_name;
@@ -23,6 +24,7 @@ class CampPurchase extends Mailable
      */
     public function __construct($validatedData)
     {
+        $this->date = $validatedData['date'];
         $this->name = $validatedData['name'];
         $this->email = $validatedData['email'];
         $this->child_name = $validatedData['child_name'];
@@ -50,6 +52,7 @@ class CampPurchase extends Mailable
         return new Content(
             markdown: 'mail.camp-purchase',
             with: [
+                'date' => $this->date,
                 'name' => $this->name,
                 'email' => $this->email,
                 'child_name' => $this->child_name,
