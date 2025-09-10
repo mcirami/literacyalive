@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-5-_fZy13.css",
+    "file": "assets/app-BcHyPyyy.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -84,14 +84,62 @@
     "file": "assets/inter-regular-webfont-r-fiXapD.woff2",
     "src": "resources/fonts/inter-regular-webfont.woff2"
   },
+  "resources/images/about-mission.png": {
+    "file": "assets/about-mission-DCWfEU63.png",
+    "src": "resources/images/about-mission.png"
+  },
+  "resources/images/arrival-bg-mobile.png": {
+    "file": "assets/arrival-bg-mobile-CjPg1rQ4.png",
+    "src": "resources/images/arrival-bg-mobile.png"
+  },
+  "resources/images/arrival-bg.png": {
+    "file": "assets/arrival-bg-BGWF4I95.png",
+    "src": "resources/images/arrival-bg.png"
+  },
+  "resources/images/content-bg.png": {
+    "file": "assets/content-bg-LjpthbGa.png",
+    "src": "resources/images/content-bg.png"
+  },
+  "resources/images/frame-line.png": {
+    "file": "assets/frame-line-a6QZ6YSY.png",
+    "src": "resources/images/frame-line.png"
+  },
+  "resources/images/home-about-us.png": {
+    "file": "assets/home-about-us-1UOfRznv.png",
+    "src": "resources/images/home-about-us.png"
+  },
+  "resources/images/home-daily-themes.png": {
+    "file": "assets/home-daily-themes-BywMZ6wx.png",
+    "src": "resources/images/home-daily-themes.png"
+  },
+  "resources/images/home-hero.png": {
+    "file": "assets/home-hero-b68s9uLv.png",
+    "src": "resources/images/home-hero.png"
+  },
+  "resources/images/home-register-bottom.png": {
+    "file": "assets/home-register-bottom-CUqD9ExN.png",
+    "src": "resources/images/home-register-bottom.png"
+  },
+  "resources/images/home-register.png": {
+    "file": "assets/home-register-DhAoFF9r.png",
+    "src": "resources/images/home-register.png"
+  },
+  "resources/images/link-hover.png": {
+    "file": "assets/link-hover-COYjJVyC.png",
+    "src": "resources/images/link-hover.png"
+  },
+  "resources/images/page-hero.png": {
+    "file": "assets/page-hero-DaxH16M1.png",
+    "src": "resources/images/page-hero.png"
+  },
   "resources/js/app.js": {
-    "file": "assets/app-3cMg85Vc.js",
+    "file": "assets/app-0y3Df3jx.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-B3-UAVTl.css",
+    "file": "assets/app-BYDG_-q7.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   }
