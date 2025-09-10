@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
+use Stripe\Exception\ApiErrorException;
+use Stripe\StripeClient;
 
 class RegisterController extends Controller
 {
@@ -41,6 +43,7 @@ class RegisterController extends Controller
         $data = $request->all();
         //session(['campRegisterData' => $data]);
 
+
         $email = App::environment('production') ? 'contact@literacyalive.org' : 'matteo@moneylovers.com';
 
         Mail::to($email)->send(new CampRegistration($data));
@@ -49,29 +52,59 @@ class RegisterController extends Controller
 
         $checkoutSession = $stripeService->createStripeCheckoutUrl($stripe, $data);
 
-        return redirect($checkoutSession->url);
+        return redirect()->away($checkoutSession->url);
     }
 
-    public function purchaseSuccess(Request $request) {
+    public function purchaseSuccess(Request $request, StripeClient $stripe) {
         // Grab the form data from the session
         //$data = session('campRegisterData');
+        $sessionId = $request->string('session_id');
+        if ($sessionId->isEmpty()) {
+            return redirect()->route('register.show')->withErrors('Missing session_id.');
+        }
 
+        try {
+            // Expand to get richer data in a single call
+            $session = $stripe->checkout->sessions->retrieve($sessionId->toString(), [
+                'expand' => ['payment_intent', 'customer', 'line_items']
+            ]);
+        } catch (ApiErrorException $e) {
+            Log::error('Stripe session retrieve failed', [
+                'session_id' => $sessionId,
+                'error' => $e->getMessage(),
+            ]);
+            return redirect()->route('register.show')->withErrors('Unable to verify your payment. Please contact support.');
+        }
+
+        // Basic sanity checks
+        if ($session->payment_status !== 'paid') {
+            return redirect()->route('register.show')->withErrors('Payment not completed.');
+        }
+
+        // Collect data for email/logging
+        $meta = $session->metadata ?? new \stdClass();
         $data = [
-            'email'         => $request->register_email,
-            'name'          => $request->register_name,
-            'child_name'    => $request->child_name
+            'date' => $meta->date_label ?? null, // human-readable label if you stored it
+            'email' => optional($session->customer_details)->email ?? $session->customer_email,
+            'name' => $meta->register_name ?? null,
+            'child_name' => $meta->child_name ?? null,
         ];
 
-        $email = App::environment('production') ? 'contact@literacyalive.org' : 'matteo@moneylovers.com';
+        $emailTo = App::environment('production') ? 'contact@literacyalive.org' : 'matteo@moneylovers.com';
 
-        Mail::to($email)->send(new CampPurchase($data));
+        try {
+            Mail::to($emailTo)->send(new CampPurchase($data));
+        } catch (\Throwable $e) {
+            Log::error('CampPurchase mail failed', ['error' => $e->getMessage(), 'data' => $data]);
+        }
 
-        // Maybe the session expired or something
-        Log::channel('my_log')->info('user purchased camp', [
-            'data' => $data,
-        ]);
+        Log::channel('my_log')->info('user purchased camp', ['data' => $data]);
 
-        return redirect()->route('register.show')->with('success', 'You Successfully Registered!');
-
+        return redirect()
+            ->route('register.show')
+            ->with([
+                'success' => 'You Successfully Registered!',
+                'selected_date_id' => $data['date_id'],
+            ]);
     }
 }
