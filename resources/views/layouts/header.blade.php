@@ -23,11 +23,28 @@
                                 </a>
                             </li>
                             <li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
-                                <a href="{{ route('plan') }}
-"
-                                   class="inline-block @if(request()->is('daily-plan')) active @endif">
+                                <button id="dropdownNavbarPlanLink" data-dropdown-toggle="dropdownNavbarPlan" class="flex items-center justify-between w-full">
                                     DAILY PLAN
-                                </a>
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                    </svg>
+                                </button>
+                                <div id="dropdownNavbarPlan" class="z-10 hidden font-normal">
+                                    <ul class="py-2" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="{{ route('summer.camp.plan') }}"
+                                               class="block px-4 py-2 @if(request()->is('summer-camp-daily-plan')) active @endif">
+                                                SUMMER CAMPS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('daily.workshops.plan') }}"
+                                               class="block px-4 py-2 @if(request()->is('daily-workshops-plan')) active @endif">
+                                                DAILY WORKSHOPS
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
                                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full">
@@ -39,17 +56,20 @@
                                 <div id="dropdownNavbar" class="z-10 hidden font-normal">
                                     <ul class="py-2" aria-labelledby="dropdownLargeButton">
                                         <li>
-                                            <a href="{{ route('workshops') }}" class="block px-4 py-2">DAILY WORKSHOPS</a>
+                                            <a href="{{ route('workshops') }}"
+                                               class="block px-4 py-2 @if(request()->is('daily-workshops')) active @endif">
+                                                DAILY WORKSHOPS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('summer-camp') }}"
+                                               class="block px-4 py-2 @if(request()->is('summer-camp')) active @endif">
+                                                SUMMER CAMPS
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
-                            {{--<li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
-                                <a href="/camp-details"
-                                   class="inline-block @if(request()->is('camp-details')) active @endif">
-                                    SUMMER CAMP
-                                </a>
-                            </li>--}}
                             <li class="pt-2 pb-2 pl-0 lx:pl-3 pr-2">
                                 <a href="{{ route('faq') }}"
                                    class="inline-block @if(request()->is('faq')) active @endif">

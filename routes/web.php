@@ -12,13 +12,17 @@ Route::get('/about-us', function() {
     return view('about-us');
 })->name('about');
 
-Route::get('/daily-plan', function() {
-    return view('daily-plan');
-})->name('plan');
+Route::get('/summer-camp-daily-plan', function() {
+    return view('summer-camp-plan');
+})->name('summer.camp.plan');
 
-Route::get('/camp-details', function() {
-    return view('camp-details');
-})->name('details');
+Route::get('/daily-workshops-plan', function() {
+    return view('daily-workshops-plan');
+})->name('daily.workshops.plan');
+
+Route::get('/summer-camp', function() {
+    return view('summer-camp');
+})->name('summer-camp');
 
 Route::get('/daily-workshops', function() {
     return view('daily-workshops');

@@ -35,7 +35,7 @@ header {
             }
         }
     }
-    a, #dropdownNavbarLink {
+    a, #dropdownNavbarLink, #dropdownNavbarPlanLink {
         @include mixins.boldoaMat;
         font-size: 1.4rem;
         position: relative;
@@ -87,7 +87,7 @@ header {
         }
     }
 
-    #dropdownNavbarLink {
+    #dropdownNavbarLink, #dropdownNavbarPlanLink {
 
         svg {
             color: variables.$pink;
@@ -100,7 +100,7 @@ header {
         }
     }
 
-    #dropdownNavbar {
+    #dropdownNavbar, #dropdownNavbarPlan {
         border-radius: 12px;
         -webkit-border-radius: 12px;
         -moz-border-radius: 12px;
@@ -108,14 +108,33 @@ header {
         a {
             color: variables.$white;
             background: variables.$green;
-            border-radius: 12px;
-            -webkit-border-radius: 12px;
-            -moz-border-radius: 12px;
 
             &:hover {
                 background: variables.$orange;
             }
+
+            &.active {
+                background: variables.$orange;
+            }
         }
+
+        li {
+            &:first-child {
+                a {
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
+                }
+            }
+
+            &:last-child {
+                a {
+                    border-bottom-left-radius: 12px;
+                    border-bottom-right-radius: 12px;
+                }
+            }
+        }
+
+
     }
 
     .hide_mobile {

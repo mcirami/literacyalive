@@ -3,7 +3,7 @@
 @section('content')
     <section class="schedule w-full pb-20">
         <div class="page_hero text-center">
-            <h2 class="inline-block relative mb-5">Schedule</h2>
+            <h2 class="inline-block relative mb-5">Daily Workshops Schedule</h2>
         </div>
         <div class="container mx-auto px-5">
             <div class="two_columns flex flex-wrap-reverse justify-center content-start">
@@ -48,22 +48,34 @@
                             <p><span>10:00</span> Learning Stations</p>
                         </li>
                         <li class="mb-2">
-                            <p><span>10:30</span> Read Aloud (snack and bathroom break)</p>
+                            <p><span>11:00</span> Read Aloud</p>
                         </li>
                         <li class="mb-2">
-                            <p><span>10:45</span> Reader’s Theater</p>
+                            <p><span>11:30</span> Lunch</p>
                         </li>
                         <li class="mb-2">
-                            <p><span>11:00</span> One group presents</p>
+                            <p><span>12:30</span> Reader’s Theater</p>
                         </li>
                         <li class="mb-2">
-                            <p><span>11:15</span> Game Time</p>
+                            <p><span>1:00</span> Group Presentations</p>
                         </li>
                         <li class="mb-2">
-                            <p><span>11:40</span> Closing Discussion</p>
+                            <p><span>1:15</span> Read Aloud</p>
                         </li>
                         <li class="mb-2">
-                            <p><span>11:55</span> Dismissal Begins</p>
+                            <p><span>2:15</span> Large Group Game Time</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>2:45</span> Free Choice Time</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>3:15</span> Multi-Sensory Centers</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>4:15</span> Literacy Concept Recap</p>
+                        </li>
+                        <li class="mb-2">
+                            <p><span>4:30-5:00</span> Clean Up & Dismissal</p>
                         </li>
                     </ul>
                 </div>
@@ -78,7 +90,7 @@
                     Snack - Please avoid snacks with nuts.<br>
                     Perishable items are permitted, however please label container with your child's name.<br>
                     Anything additional, please Contact Us!
-                    </p>
+                </p>
             </div>
         </div>
     </section>
@@ -87,11 +99,11 @@
             <h2 class="dotted mb-10 inline-block relative">What NOT to bring!</h2>
             <div class="two_columns flex flex-wrap justify-center max-w-300 mx-auto">
                 <p class="mb-10">Toys<br>
-                Candy<br>
-                Electronic Devices
+                    Candy<br>
+                    Electronic Devices
                 </p>
             </div>
-            </div>
+        </div>
         </div>
     </section>
     <section class="arrival w-full pt-20 text-center relative">
