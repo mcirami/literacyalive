@@ -29,6 +29,9 @@
                 </div>
                 <div class="column w-full md:w-1/2 px-5 mb-10 md:mb-0">
                     <ul class="mt-4">
+ 			<li class="mb-2">
+                            <p><span>2026</span> DATES & LOCATION/S TBD</p>
+                        </li>
                         <li class="mb-2">
                             <p><span>8:30</span> Arrival/Tactile Centers Open</p>
                         </li>

@@ -19,7 +19,7 @@
                     <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
                         <div class="p-5">
                             <p class="mb-2">
-                               There will be at least a 1:6 ratio of staff to campers each day.
+                               There will be a maximum of 1:8 ratio of staff to campers each day at all of our events. Depending on the camps size and curriculum, we typically have a ratio closer to 1 staff per 6 campers.
                             </p>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                     <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                         <div class="p-5">
                             <p class="mb-2 ">
-                                No. Literacy Alive Summer Camp is not affiliated with Elliot Chapel. Our camp will be solely focused on teaching our campers literacy skills.
+                                No. Literacy Alive is a non-profit organization solely focused on fun ways for children to learn literacy skills. None of our events are affiliated with or promote any particular religious beliefs. Some of our camp venues may schools or churches but this will not change our focus and goal to help your child grow and increase their literacy skills.
                             </p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                     <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
                         <div class="p-5">
                             <p class="mb-2 ">
-    Every day there will be a major phonics concept taught to the whole group. Each concept will be reinforced in group games and individual centers. The Director will meet with each child in small group settings at least twice during the week.                           </p>
+    Every day at our camps will focus on a major phonics concept taught to the whole group. Each concept will be reinforced in group games and individual centers. In addition, the Director will meet with each child in a small group setting at least once in a single day camp and no less than twice per week during week long camps.                           </p>
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@
                     <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
                         <div class="p-5">
                             <p class="mb-2 ">
-                                Each week long summer camp will accept no more than 24 campers.
+                                Each camp will vary depending on the group registering and the event location. More details can be found inside the "Camp" menu for each specific event being held.
                             </p>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                     <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
                         <div class="p-5">
                             <p class="mb-2 ">
-                                We are happy to accomodate your schedule if required. Please either email or write a note informing us of any changes.
+                                We are happy to accomodate your schedule if required. Please either email or write a note informing us of any changes and all associated details including timing, campers name, and who will be responsible for drop off and/or pickup.
                             </p>
                         </div>
                     </div>
