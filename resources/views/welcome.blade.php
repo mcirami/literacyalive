@@ -169,11 +169,11 @@
         <div class="container mx-auto px-5">
             <h2 class="inline-block relative">LITERACY ALIVE<br/> IS READY FOR YOUR CHILD</h2>
             <div class="sub_heading_box">
-                <p class="">Register today to attend our Literacy Alive summer Camp 2025.</p>
+                <p class="">Register today to attend our Literacy Alive summer Camp 2026.</p>
             </div>
             <p class="mt-6 mb-4 small_container">
                 The camp will be held at Elliot Chapel, located at <span class="font-bold">100 South Taylor Ave., Kirkwood, MO 63122</span>
-                the week of <span class="yellow">July 28th through August 1st.</span>
+                the week of <span class="yellow">July 27th through July 31st.</span>
                 Campers should arrive daily at 8:30 am and be released each day at noon.
             </p>
             <a href="/camp-registration"

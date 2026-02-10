@@ -28,7 +28,7 @@
                     </div>
                 @else
                     <p class="max-w-200 mx-auto mt-5 mb-6 sub_heading">
-                        Please fill out the form below to register for camp.<br> There is a fee of $80 for the camp.<br>
+                        Please fill out the form below to register for camp.<br> There is a fee of $200 for the camp.<br>
                         After you register you will be taken to a payment page.
                         <br>Please submit your payment so we can finalize your registration.
                     </p>
@@ -37,16 +37,17 @@
                         @endphp
                     <form id="camp_register" class="max-w-150 mx-auto text-left" method="POST" action="{{ route('register.submit') }}">
                         @csrf
-                        <label for="date" class="block mb-1">You Are Registering For Camp On</label>
-                        <div class="w-full mx-auto select_wrap relative mb-2">
-                            <select name="date" id="date" class="bg-white block p-2.5 w-full">
+                        <label for="date" class="block mb-2 text-center">You Are Registering For Camp For</label>
+                        <div class="w-full mx-auto select_wrap relative mb-2 text-center">
+                            <h3 class="text-3xl">July 27th through July 31st</h3>
+                           {{-- <select name="date" id="date" class="bg-white block p-2.5 w-full">
                                 <option value="0" {{ (string)$selectedId === '0' ? 'selected' : '' }}>December 22, 2025</option>
                                 <option value="1" {{ (string)$selectedId === '1' ? 'selected' : '' }}>March 16, 2026</option>
                                 <option value="2" {{ (string)$selectedId === '2' ? 'selected' : '' }}>March 17, 2026</option>
                             </select>
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                            </svg>
+                            </svg>--}}
                         </div>
 
                         <input type="hidden" name="recaptcha_token" id="recaptcha_token">
