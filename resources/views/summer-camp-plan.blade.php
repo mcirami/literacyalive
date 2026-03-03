@@ -30,10 +30,10 @@
                 <div class="column w-full md:w-1/2 px-5 mb-10 md:mb-0">
                     <ul class="mt-4">
  			<li class="mb-2">
-                            <p><span>2026</span> DATES & LOCATION/S TBD</p>
+                            <p><span>2026</span> DAILY SCHEDULE</p>
                         </li>
                         <li class="mb-2">
-                            <p><span>8:30</span> Arrival/Tactile Centers Open</p>
+                            <p><span>8:30</span> Arrival/Literacy Centers Open</p>
                         </li>
                         <li class="mb-2">
                             <p><span>9:00</span> Meeting</p>
@@ -45,7 +45,7 @@
                             <p><span>9:30</span> Whole Group Lesson</p>
                         </li>
                         <li class="mb-2">
-                            <p><span>9:45</span> Large Group Song and Game</p>
+                            <p><span>9:45</span> Large Group Song and Game (outside)</p>
                         </li>
                         <li class="mb-2">
                             <p><span>10:00</span> Learning Stations</p>
@@ -54,13 +54,10 @@
                             <p><span>10:30</span> Read Aloud (snack and bathroom break)</p>
                         </li>
                         <li class="mb-2">
-                            <p><span>10:45</span> Reader’s Theater</p>
+                            <p><span>10:50</span> Free Choice - Tactile Centers</p>
                         </li>
                         <li class="mb-2">
-                            <p><span>11:00</span> One group presents</p>
-                        </li>
-                        <li class="mb-2">
-                            <p><span>11:15</span> Game Time</p>
+                            <p><span>11:20</span> Whole Group Game Time</p>
                         </li>
                         <li class="mb-2">
                             <p><span>11:40</span> Closing Discussion</p>

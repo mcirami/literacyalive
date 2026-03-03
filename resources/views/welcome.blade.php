@@ -103,7 +103,7 @@
                         </div>
                         <h2 id="accordion-collapse-heading-5">
                             <button type="button" class="flex items-center justify-between w-full pt-5 pr-5 pb-5 font-medium rtl:text-right  border-t gap-3" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
-                                <span>PRINCESS VS HEROES</span>
+                                <span>ISLAND TIME</span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                                 </svg>
@@ -111,8 +111,9 @@
                         </h2>
                         <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
                             <p class="mb-2 ">
-                                Dress up as your favorite princess or super hero and act out plays.
+                                An island vibe will be incorporated into learning activities and games.
                             </p>
+                            <p class="mb-2 ">There will also be a Luau to celebrate the whole week! </p>
                         </div>
                     </div>
                 </div>
@@ -160,7 +161,7 @@
             </li>
             <li>
                 <h3>
-                    PRINCESSES VS HEROES
+                    ISLAND TIME
                 </h3>
             </li>
         </ul>
